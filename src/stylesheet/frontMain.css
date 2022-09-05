@@ -1,0 +1,84 @@
+.front-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front{
+    width: 60vw;
+    display: flex;
+    justify-content:space-around;
+}
+
+.front-info{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.front-info h4{
+    font-size: 60px;
+    margin:0;
+}
+
+.front-info p{
+    margin:0;
+    color: black;
+    background-color: aliceblue;
+    padding: 7px;
+    border-radius: 9px;
+    
+}
+
+.front-buttons{
+    display: flex;
+}
+
+.button-front{
+    width: 30px;
+    height: 30px;
+    margin: 7px;
+    border-radius: 12px;
+    cursor: pointer;
+    
+}
+.button-front:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.button-front.git{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/4926/4926624.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+}
+
+.button-front.linkedin{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3938/3938044.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.button-front.instagram{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1409/1409946.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.picture-container{
+    width:max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture{
+    width: 300px;
+    height: 300px;
+    background-image: url(https://www.wallpaperflare.com/static/122/439/624/fantasy-art-magic-warrior-black-wallpaper.jpg);
+    background-size: cover;
+   border-radius: 100%;
+    background-repeat: no-repeat;
+}
