@@ -17,7 +17,6 @@ function App() {
      <Skills></Skills>
      <Works></Works>
      <Footer></Footer>
-
     </>
   );
 }

@@ -1,11 +1,12 @@
 import "../stylesheet/about.css";
+import Techsopher from "./svg/techsopher";
 
 const About = () => {
   return (
     <div className="about-container">
       <div className="about-content-container">
         <div className="techsopher-container">
-          <div className="svg"></div>
+            <Techsopher></Techsopher>
         </div>
         <div className="about-info">
           <h4>About</h4>

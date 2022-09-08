@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --blackbg: #202023;
+  /* --blackbg: #202023; */
+  --blackbg: #161618;
   --purple: #d958a8;
   --cyan: #7edfd3;
 }
 
 body {
+  max-width: 100%;
   margin: 0;
   font-family: poppins, sans-serif;
-    background-color: var(--blackbg);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--blackbg);
   color: white;
+  overscroll-behavior-x: none;
 }
 
 code {

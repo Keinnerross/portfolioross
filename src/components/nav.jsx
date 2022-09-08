@@ -4,13 +4,15 @@ const Nav = () => {
   return (
     <nav>
       <div className="nav-container">
+        
         <div className="logo">
+        <div className="isotype"></div>
           <span>KeinnerRoss</span>
         </div>
         <ul className="ul-nav">
-          <li>Works</li>
           <li>About</li>
           <li>Skills</li>
+          <li>Works</li>
         </ul>
         <div className="button-cv-container">
           <div className="button-cv">
