@@ -1,4 +1,4 @@
-import '../../stylesheet/svgStyle/techsopher.css'
+import '../../stylesheet/svg/techsopher.css'
 
 const Techsopher = (props) => (
   <svg

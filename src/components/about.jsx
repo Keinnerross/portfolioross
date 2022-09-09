@@ -3,7 +3,7 @@ import Techsopher from "./svg/techsopher";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
       <div className="about-content-container">
         <div className="techsopher-container">
             <Techsopher></Techsopher>

@@ -10,27 +10,30 @@
 .front{
     width: 70vw;
     display: flex;
+    align-items: center;
     justify-content:space-around;
 }
 
 .front-info{
-    
+    max-width:fit-content;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    padding: 15px;
+    border-radius: 20px;
 }
 .front-info h4{
-    font-size: 75px;
+    font-size: 55px;
     margin:0;
+    padding: 0;
+    line-height: 60px;
 }
 
 .front-info p{
+    font-size: 18px;
     margin:0;
-    color: black;
-    background-color: aliceblue;
-    padding: 7px;
-    border-radius: 9px;
-    
 }
 
 .front-buttons{
@@ -78,19 +81,52 @@
 .picture{
     width: 350px;
     height: 350px;
-    background-image: url(https://www.wallpaperflare.com/static/122/439/624/fantasy-art-magic-warrior-black-wallpaper.jpg);
+    background-image: url(../images/me.png);
     background-size: cover;
-   border-radius: 100%;
+    border-radius: 100%;
     background-repeat: no-repeat;
 }
 
 /* Scroll Button */
 
-.scroll-sign{
+@keyframes scroll-sign {
+    0%{ transform: translatey(0) rotate(90deg);}
+    50%{ transform: translatey(-10px) rotate(90deg);}
+    100%{ transform: translatey(0) rotate(90deg);}
+
+
+}
+
+.scroll{
+    user-select: none;
+    text-align: center;
+    line-height: 45px;
+}
+.scroll h4{
+    font-weight: 300;
+    animation: scroll-sign 1s infinite;
+    
+}
+.scroll a:link, a:visited{
+    cursor: pointer;
+    text-decoration:none;
+    color: white;
+    
+}
+
+.right{
     position: absolute;
     right: 5px;
-    bottom: 60px;
-    transform: rotate(90deg);
-    cursor: pointer;
-    user-select: none;
+    bottom: 20px;
 }
+
+.left{
+    position: absolute;
+    left: 5px;
+    bottom: 20px;
+}
+
+
+
+/* Scroll animation */
+
