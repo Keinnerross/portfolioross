@@ -18,7 +18,7 @@ const About = () => {
               </span>
               he trabajado como freelancer en estos últimos años y ahora busco
               nuevos retos donde pueda fortalecer mis habilidades y trabajar en
-              equipo. Amo la naturaleza, la historia y las arepas.
+              equipo. Amo la naturaleza, la historia y el arte.
             </p>
           </section>
           <section className="interest-info">
