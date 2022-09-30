@@ -2,7 +2,7 @@
 
 :root {
   /* --blackbg: #202023; #161618 */
-  --blackbg:  rgb(18, 17, 17);
+  --blackbg:  #161618;
   --purple: #d63384;
   --cyan: #7edfd3;
   scroll-behavior: smooth;
@@ -27,4 +27,5 @@ body .cyan-1{
 
 body .purple-1{
   color: var(--purple);
+ 
 }

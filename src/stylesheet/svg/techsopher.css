@@ -32,7 +32,7 @@
     left:0;
     color: var(--purple);
     font-family: poppins;
-    font-size: 1em;
+    font-size: 1.1em;
     transform-origin: center;
     transform-style: preserve-3d;
     padding: 5px 11px;
@@ -69,7 +69,7 @@
 }
 
 #rock-1{
-    animation: rock1-anim 9s infinite 0.3s ease-out;
+    animation: rock1-anim 9s infinite 0.3s linear;
 }
 
 #rock-2{
@@ -77,15 +77,15 @@
 }
 
 #rock-3{
-    animation: rock1-anim 9s infinite 0.8s ease-in;
+    animation: rock1-anim 9s infinite 0.8s linear;
 }
 
 #rock-4{
-    animation: rock1-anim 15s infinite 1.1s ease-in-out;
+    animation: rock1-anim 15s infinite 1.1s linear;
 }
 
 #rock-5{
-    animation: rock2-anim 8s infinite 1.5s ease-out;
+    animation: rock2-anim 9s infinite 1.5s linear;
 }
 
 
