@@ -1,4 +1,15 @@
-import '../stylesheet/skills.css'
+import "../stylesheet/skills.css";
+import {
+  SiHtml5,
+  SiCss3,
+  SiBootstrap,
+  SiSass,
+  SiWebpack,
+  SiReact,
+  SiNodedotjs,
+} from "react-icons/si";
+import { DiJavascript, DiNpm } from "react-icons/di";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Skills = () => {
   return (
@@ -7,11 +18,57 @@ const Skills = () => {
         <div className="info-skills-container">
           <h4>Skills</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-            eveniet, ea cumque officiis dignissimos ducimus, id doloremque
-            libero cum adipisci, veritatis debitis? Dignissimos laborum
-            assumenda exercitationem minima totam quod dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam placeat possimus optio, quas iusto consequuntur blanditiis odit corrupti assumenda officia? Nemo rerum veniam deleniti. Aliquid quos magni unde neque minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptates ipsum dignissimos error quae. Sequi atque quo nulla soluta eveniet pariatur, modi unde repellat, ea magni harum, suscipit illum optio.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+            eaque corrupti, placeat laudantium fugit eligendi nobis temporibus,
+            eos explicabo laboriosam ex quam velit consequuntur repellendus
+            minima quasi. Aut, illo nesciunt!
           </p>
+          <div className="skills-list">
+            <ul>
+              <li>
+                <SiHtml5 />
+                <span>Html</span>
+              </li>
+              <li>
+                <SiCss3 />
+                <span>Css</span>
+              </li>
+              <li>
+                <SiBootstrap />
+                <span>Bootstrap</span>
+              </li>
+              <li>
+                <SiSass />
+                <span>Sass</span>
+              </li>
+              <li>
+                <DiJavascript />
+                <span>Javascript</span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <DiNpm />
+                <span>Npm</span>
+              </li>
+              <li>
+                <SiWebpack />
+                <span>Webpack</span>
+              </li>
+              <li>
+                <SiReact />
+                <span>React</span>
+              </li>
+              <li>
+                <TbBrandNextjs />
+                <span>Next.js</span>
+              </li>
+              <li>
+                <SiNodedotjs />
+                <span>Node</span>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="torch-container">
           <div className="svg-torch"></div>
