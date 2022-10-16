@@ -2,13 +2,17 @@
 
 :root {
   /* --blackbg: #202023; #161618 */
-  --blackbg:  #161618;
-  --purple: #d63384;
-  --cyan: #7edfd3;
-  scroll-behavior: smooth;
+  --blackbg:  #0d1117;
+  --purple: #218ffe;
+  --cyan: #0dcaf0;
+  
+}
+*{
+  scroll-behavior: smooth !important;
 }
 
 body {
+  font-size: 18px;
   max-width: 100%;
   margin: 0;
   font-family: poppins, sans-serif;

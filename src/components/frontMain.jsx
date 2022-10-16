@@ -15,7 +15,7 @@ const FrontMain = () => {
       <div className="front">
         <div className="front-info">
           <h4>Hi,</h4>
-          <h4>I'm Keinner Ross <span>👋</span></h4>
+          <h4>I'm Keinner Ross</h4>
           <p className="description">
             {" "}
             <span className="purple-1">Frontend Developer</span> ( Artist /
