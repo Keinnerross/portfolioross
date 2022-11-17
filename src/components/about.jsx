@@ -15,8 +15,7 @@ const About = () => {
               Me llamo KeinnerRoss ( nacido en 1998 - Venezuela)
               <span className="purple-1">
                 soy diseñador y desarrollador Frontend,
-              </span>
-              he trabajado como freelancer en estos últimos años y ahora busco
+              </span> he trabajado como freelancer en estos últimos años, ahora busco
               nuevos retos donde pueda fortalecer mis habilidades y trabajar en
               equipo. Amo la naturaleza, la historia y el arte.
             </p>

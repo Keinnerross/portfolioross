@@ -14,13 +14,13 @@ const Works = () => {
             img="https://www.jsmastery.pro/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmovie.3bed4872.png&w=3840&q=75"
           />
           <ProjectCard
-            title="Link in bio"
+            title="Link in Bio"
             icon="x"
             technology="Next.js"
             img="https://elementor.com/marketing/wp-content/uploads/sites/9/2020/07/Create-a-Link-in-Instagram-Bio_External.png"
           />
           <ProjectCard
-            title="Git Search User"
+            title="SoloGomas-Belts.app"
             icon="x"
             technology="Javascript"
             img="https://github.blog/wp-content/uploads/2021/12/GitHub-code-search_banner.png?fit=1200%2C630"
@@ -28,21 +28,21 @@ const Works = () => {
         </div>
         <div className="box-works-container">
           <ProjectCard
-            title="Utopy Ecosystem Simulator"
+            title="Utopy Simulator"
             icon="x"
             technology="procesing.js"
             img="https://dmishin.github.io/images/minkovski-ca.png"
           />
           <ProjectCard
-            title="Hola"
+            title="Venezuela World Map"
             icon="x"
             technology="Js"
-            img="https://github.blog/wp-content/uploads/2021/12/GitHub-code-search_banner.png?fit=1200%2C630"
+            img="https://pbs.twimg.com/media/E0z1zV6XoAQ5kr6?format=png&name=large"
           />
           <ProjectCard
-            title="Google Clon"
+            title="Other Project"
             icon="x"
-            technology="HTML & CSS"
+            technology="Web Technology"
             img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_Homepage.svg/640px-Google_Homepage.svg.png"
           />
         </div>
