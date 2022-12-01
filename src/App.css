@@ -23,6 +23,12 @@ code {
     monospace;
 }
 
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
 body .cyan-1 {
   color: var(--cyan);
 }

@@ -1,23 +1,34 @@
 import "../stylesheet/nav.css";
-
+import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <nav>
       <div className="nav-container">
-        <div className="logo">
-          <span>KeinnerRoss</span>
-        </div>
+        <Link to="/">
+          <div className="logo">
+            <span className="img-me"></span>
+            <span className="logotype">KeinnerRoss</span>
+          </div>
+        </Link>
+
         <div className="routes-section">
           <ul className="ul-nav">
-            <li>About</li>
-            <li>Skills</li>
-            <li>Works</li>
+            <li>Q</li>
+            <Link to="/trabajos">
+              <li>Trabajos</li>
+            </Link>
+            <li>Cursos</li>
+            <Link to="/about">
+              <li>Sobre mi</li>
+            </Link>
           </ul>
-          <div className="button-cv-container">
-            <div className="button-cv">
-              <span>Download CV</span>
+          <Link to="/contacto">
+            <div className="button-cv-container">
+              <div className="button-cv">
+                <span>Contáctame</span>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </nav>

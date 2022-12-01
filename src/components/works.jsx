@@ -40,13 +40,13 @@ const Works = () => {
             img="https://dmishin.github.io/images/minkovski-ca.png"
           />
           <ProjectCard
-            title="Link in Bio"
+            title="SoloGomas Page"
             icon="x"
             technology="Next.js"
             img="https://elementor.com/marketing/wp-content/uploads/sites/9/2020/07/Create-a-Link-in-Instagram-Bio_External.png"
           />
           <ProjectCard
-            title="Venezuela World Map"
+            title="JaxConstruction Page"
             icon="x"
             technology="Js"
             img="https://pbs.twimg.com/media/E0z1zV6XoAQ5kr6?format=png&name=large"
