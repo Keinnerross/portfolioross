@@ -5,12 +5,10 @@ const About = () => {
   return (
     <div id="about" className="about-container">
       <div className="about-content-container">
-        <div className="techsopher-container">
-          <Techsopher></Techsopher>
-        </div>
+        
         <div className="about-info">
           <section className="info">
-            <h4>About</h4>
+            <h4>Hola!</h4>
             <p>
               Me llamo KeinnerRoss ( nacido en 1998 - Venezuela)
               <span className="purple-1">
@@ -36,6 +34,9 @@ const About = () => {
             </div>
           </div>
           </section>
+        </div>
+        <div className="techsopher-container">
+          <img src="https://images.pexels.com/photos/115655/pexels-photo-115655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
         </div>
       </div>
     </div>

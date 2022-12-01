@@ -1,82 +1,84 @@
-.about-container{
-    max-width:100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0 180px 0;
-    
+.about-container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
 }
 
-.about-content-container{
-    width: 70vw;
-    display: flex;
-    justify-content: space-around;
-    
+.about-content-container {
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-.techsopher-container{
-    display: block;
-    width: 30%;
-    
-   
-}
-.about-info{
-    width: 50%;
-    padding-left: 50px;
-    margin: 0;
+.techsopher-container {
+  display: block;
+  width: 50%;
 }
 
-.about-info h4{
-    font-size: 64px;
-    margin: 0;
-}
-.about-info p{
-    font-size: 20px;
-    font-weight: lighter;
-    margin: 0;
-}
-.interest-info{
-    margin-top: 40px;
-}
-.interests{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.techsopher-container img {
+    width: 500px;
+    margin-left: 100px;
+  }
+  .about-
+.about-info {
+  width: 50%;
 }
 
-.interest{
-    width: 150px;
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    margin-right: 10px;
-    cursor: pointer;
+.about-info h4 {
+  font-size: 64px;
+  margin: 0;
+}
+.about-info p {
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0;
+}
+.interest-info {
+  margin-top: 40px;
+}
+.interests {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.interest-ico{
-    padding: 15px;
-    margin-right: 10px;
-    background-color: rebeccapurple;
-    border-radius: 9px;
+.interest {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-.platzi{
-    background-image: url("../images/icons/platzi-ico.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+.interest-ico {
+  padding: 15px;
+  margin-right: 10px;
+  background-color: rebeccapurple;
+  border-radius: 9px;
 }
 
-.procedural{
-    background-image: url("../images/icons/procedural-ico.png");
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: 26px ;
-    background-position: 2px;
+.platzi {
+  background-image: url("../images/icons/platzi-ico.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.filosofia{
-    background-image: url("../images/icons/filosofia-ico.png");
-    background-repeat: no-repeat;
-    background-color: white;
-    background-size: 27px ;
-    background-position: 2px;
+.procedural {
+  background-image: url("../images/icons/procedural-ico.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 26px;
+  background-position: 2px;
+}
+
+.filosofia {
+  background-image: url("../images/icons/filosofia-ico.png");
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 27px;
+  background-position: 2px;
 }

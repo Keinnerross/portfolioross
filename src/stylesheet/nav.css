@@ -13,18 +13,11 @@ nav{
 }
 .nav-container{
     width: 80vw;
-    display: grid;
-    grid-template-columns: 10% 75% 15%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.isotype{
-    width: 20px;
-    height:20px;
-    background-image: url(../images/isotype.png);
-    background-size: contain;
-    transition: 0.9s;
 
-}
 .logo{
     width: fit-content;
     display: flex;
@@ -43,6 +36,10 @@ nav{
     font-size: 26px;
     font-weight: 600;
     padding-left: 7px;
+}
+
+.routes-section{
+    display: flex;
 }
 
 .ul-nav{

@@ -12,9 +12,7 @@ function App() {
   return (
     <>
      <Nav></Nav>
-     <FrontMain></FrontMain>
      <About></About>
-     <Skills></Skills>
      <Works></Works>
      <Footer></Footer>
     </>
