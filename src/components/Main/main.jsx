@@ -1,6 +1,5 @@
-import "../stylesheet/about.css";
-import Techsopher from "./svg/techsopher";
-
+import "../../stylesheet/main/main.css";
+import ButtonsAndSocial from "./buttonsAndSocial";
 const About = () => {
   return (
     <div id="about" className="about-container">
@@ -18,24 +17,7 @@ const About = () => {
               equipo. Amo la naturaleza, la historia y el arte.
             </p>
           </section>
-          <section className="buttons-about">
-            <button>Blog</button>
-            <button>Otras Cosas</button>
-            <div className="front-buttons">
-              <div
-                className="button-front git"
-                onClick={() => {
-                  alert("Corriendo Prroxd");
-                }}
-              ></div>
-              <div className="button-front linkedin"></div>
-              <div className="button-front instagram"></div>
-              <span>Twitter</span>
-              <span>Tiktok</span>
-              <span>Discord</span>
-              <span>Youtube</span>
-            </div>
-          </section>
+          <ButtonsAndSocial />
         </div>
         <div className="img-about-container">
           <img
