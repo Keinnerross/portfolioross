@@ -19,7 +19,8 @@ const About = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
           eaque corrupti, placeat laudantium fugit eligendi nobis temporibus,
           eos explicabo laboriosam ex quam velit consequuntur repellendus minima
-          quasi. Aut, illo nesciunt!
+          quasi. Aut, illo nesciunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos recusandae sit saepe inventore expedita architecto repellat, ad quo dolor alias nesciunt quas excepturi? Assumenda autem perferendis optio accusantium quo ullam?
+          <br />
         </p>
       </div>
 

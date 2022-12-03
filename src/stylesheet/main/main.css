@@ -16,7 +16,8 @@
 
 .img-about-container img {
   width: 500px;
-  margin-left: 100px;
+  margin-left: 50px;
+  border-radius: 7px;
 }
 
 .about-info h4 {
