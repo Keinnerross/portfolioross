@@ -1,0 +1,44 @@
+.box-work-main {
+  width: 50%;
+  height: 150px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  padding: 10px;
+  border-radius: 9px;
+}
+.box-work-main:hover {
+  background-color: var(--purple);
+}
+.img-project-container {
+  width: 30%;
+  height: 100%;
+  border-radius: 9px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-color: rebeccapurple;
+}
+
+
+.info-project-container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+ margin-left: 20px;
+
+}
+
+
+.info-project-container h3{
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.info-project-container p{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}

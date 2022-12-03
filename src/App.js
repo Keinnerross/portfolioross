@@ -1,10 +1,10 @@
 import "./App.css";
 import Nav from "./components/nav";
-import FrontMain from "./components/frontMain";
-import About from "./components/Main/main";
-import Skills from "./components/skills";
-import Works from "./components/works";
-import Footer from "./components/footer";
+import Main from "./components/Main/main";
+import About from "./components/about";
+import Works from "./components/works/works";
+import Footer from "./components/Main/footer";
+import Contact from "./components/contact";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,13 +16,24 @@ function App() {
           path="/"
           element={
             <>
-              <About /> <Works />
+              <Main />
+              <Works />
+              
+              <Footer />
             </>
           }
         ></Route>
-        <Route path="/about" element={<Skills />}></Route>
+        <Route
+          path="/about"
+          element={
+            <>
+              <About />
+              <Footer />
+            </>
+          }
+        ></Route>
         <Route path="/trabajos" element={<Works />}></Route>
-        <Route path="/contacto" element={<Footer />}></Route>
+        <Route path="/contacto" element={<Contact />}></Route>
       </Routes>
     </>
   );

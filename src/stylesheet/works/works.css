@@ -1,0 +1,31 @@
+.works-container {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.works-content-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-works {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.nav-works h4 {
+  font-size: 30px;
+  margin: 0;
+}
+.box-works-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  gap: 10px;
+}

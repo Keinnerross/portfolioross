@@ -1,8 +1,8 @@
-import "../stylesheet/footer.css";
+import "../stylesheet/contact.css";
 
-const Footer = () => {
+const Contact = () => {
   return (
-    <footer>
+    <div className="contact-container">
       <div className="footer-content-container">
         <div className="footer-form">
           <h2>Contact</h2>
@@ -16,8 +16,8 @@ const Footer = () => {
         </div>
         <div className="ship-map">ESTOYAKI</div>
       </div>
-    </footer>
+    </div>
   );
 };
 
-export default Footer;
+export default Contact;

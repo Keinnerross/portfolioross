@@ -1,5 +1,7 @@
 import "../stylesheet/nav.css";
 import { Link } from "react-router-dom";
+import { BsFillSunFill } from "react-icons/bs";
+
 const Nav = () => {
   return (
     <nav>
@@ -13,7 +15,7 @@ const Nav = () => {
 
         <div className="routes-section">
           <ul className="ul-nav">
-            <li>Q</li>
+            <li><BsFillSunFill/></li>
             <Link to="/trabajos">
               <li>Trabajos</li>
             </Link>

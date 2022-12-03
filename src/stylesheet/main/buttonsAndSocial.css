@@ -21,6 +21,13 @@
   font-weight: 400;
   border-radius: 9px;
   cursor: pointer;
+  transition: 1s;
+}
+
+.button-secundary:hover {
+  background-color: var(--purple);
+  transition: 0.4s;
+
 }
 
 .front-buttons {

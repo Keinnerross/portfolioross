@@ -1,6 +1,7 @@
 import "../../stylesheet/main/main.css";
 import ButtonsAndSocial from "./buttonsAndSocial";
-const About = () => {
+
+const Main = () => {
   return (
     <div id="about" className="about-container">
       <div className="about-content-container">
@@ -25,9 +26,11 @@ const About = () => {
             alt=""
           />
         </div>
+        
       </div>
+      
     </div>
   );
 };
 
-export default About;
+export default Main;
