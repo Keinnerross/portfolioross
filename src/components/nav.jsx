@@ -1,6 +1,6 @@
 import "../stylesheet/nav.css";
+import LightMode from "./lightMode";
 import { Link } from "react-router-dom";
-import { BsFillSunFill } from "react-icons/bs";
 
 const Nav = () => {
   return (
@@ -15,10 +15,12 @@ const Nav = () => {
 
         <div className="routes-section">
           <ul className="ul-nav">
-            <li><BsFillSunFill/></li>
-            <Link to="/trabajos">
+            <li>
+              <LightMode />
+            </li>
+            <a href="/#trabajos">
               <li>Trabajos</li>
-            </Link>
+            </a>
             <li>Cursos</li>
             <Link to="/about">
               <li>Sobre mi</li>

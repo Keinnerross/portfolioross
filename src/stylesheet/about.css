@@ -1,11 +1,12 @@
 .skills-container {
   width: 100vw;
   max-width: 100%;
-  margin-top: 150px;
+  margin-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .skills-content-container {
@@ -13,27 +14,42 @@
   display: flex;
 }
 
-.info-skills-container h4 {
-  font-size: 60px;
-  margin: 0;
-}
 .info-skills-container p {
   font-size: 20px;
   margin: 0;
 }
 
-.skills-list{
+.skills-list {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.skills-list h2 {
+  font-size: 32px;
+
+  margin: 0 0 10px 0;
+}
+.skills-list h3 {
+  margin: 0;
+  font-size: 18px;
 }
 
 .skills-list ul {
   list-style: none;
-  margin: 20px 0 0 0;
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   cursor: pointer;
-  gap: 30px;
+  gap: 28px;
+}
+
+.list-others-container {
+  margin-top: 5px;
+}
+.list-others {
+  font-size: 16px;
 }
 
 .skills-list li > svg {
@@ -43,20 +59,8 @@
 
 .skills-list li:hover > svg {
   animation: aniskill 1.2s linear;
-  transform: scale(1.9);
+  transform: scale(1.7);
   transition: 0.5s;
-}
-
-.torch-container {
-  width: 350px;
-}
-
-.svg-torch {
-  height: 150%;
-  background-image: url(../images/Recurso\ 1iconAFaaff.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 @keyframes aniskill {

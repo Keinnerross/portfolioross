@@ -1,0 +1,19 @@
+.call-action-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.button-call-action {
+  padding: 10px;
+  background-color: var(--purple);
+  color: white;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.footer-text {
+  margin: 25px 0;
+}

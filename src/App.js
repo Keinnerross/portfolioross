@@ -1,11 +1,12 @@
-import "./App.css";
 import Nav from "./components/nav";
 import Main from "./components/Main/main";
+import CallToAction from "./components/Main/callToAction";
 import About from "./components/about";
 import Works from "./components/works/works";
 import Footer from "./components/Main/footer";
 import Contact from "./components/contact";
 import { Route, Routes } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             <>
               <Main />
               <Works />
-              
+              <CallToAction />
               <Footer />
             </>
           }
@@ -28,12 +29,20 @@ function App() {
           element={
             <>
               <About />
+              <CallToAction />
               <Footer />
             </>
           }
         ></Route>
         <Route path="/trabajos" element={<Works />}></Route>
-        <Route path="/contacto" element={<Contact />}></Route>
+        <Route
+          path="/contacto"
+          element={
+            <>
+              <Contact />
+            </>
+          }
+        ></Route>
       </Routes>
     </>
   );

@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  /* --blackbg: #202023; #161618 */
+  /* --blackbg: #202023; #161618  #0d1117*/
   --blackbg: #0d1117;
+  --secundary: #1c2833;
   --purple: #218ffe;
   --cyan: #0dcaf0;
-  scroll-behavior: smooth;
+  --textColor: white;
+  scroll-behavior: smooth !important ;
 }
 
 body {
@@ -15,7 +17,11 @@ body {
   margin: 0;
   font-family: poppins, sans-serif;
   background-color: var(--blackbg);
-  color: white;
+  color: var(--textColor);
+}
+
+body li {
+  color: var(--textColor);
 }
 
 code {
@@ -35,4 +41,27 @@ body .cyan-1 {
 
 body .purple-1 {
   color: var(--purple);
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-button:increment,
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secundary);
+  border-radius: 20px;
+  border: 1px solid var(--purple);
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
 }

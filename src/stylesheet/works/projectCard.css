@@ -1,44 +1,43 @@
 .box-work-main {
-  width: 50%;
-  height: 150px;
+  width: 32em;
+  height: 160px;
   cursor: pointer;
-  color: white;
   display: flex;
   padding: 10px;
   border-radius: 9px;
 }
 .box-work-main:hover {
-  background-color: var(--purple);
+  background-color: var(--secundary);
 }
 .img-project-container {
-  width: 30%;
-  height: 100%;
+  min-width: 200px;
+  width: 200px;
   border-radius: 9px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  background-color: rebeccapurple;
 }
 
-
-.info-project-container{
+.info-project-container {
   display: flex;
   flex-direction: column;
   gap: 5px;
- margin-left: 20px;
-
+  margin-left: 20px;
 }
 
-
-.info-project-container h3{
+.info-project-container h3 {
   font-size: 24px;
   margin: 0;
   padding: 0;
 }
 
-
-.info-project-container p{
+.info-project-container p {
   font-size: 16px;
   margin: 0;
   padding: 0;
+}
+
+.tech-project-container{
+  color: var(--purple);
+  font-style: italic;
 }

@@ -1,6 +1,14 @@
 import "../../stylesheet/works/projectCard.css";
 
-const ProjectCard = ({ img, title, description, icon, technology }) => {
+const ProjectCard = ({
+  img,
+  title,
+  description,
+  icon,
+  technology,
+  icon2,
+  technology2,
+}) => {
   return (
     <div className="box-work-main">
       <div
@@ -11,10 +19,9 @@ const ProjectCard = ({ img, title, description, icon, technology }) => {
       ></div>
       <div className="info-project-container">
         <h3>{title}</h3>
-        <p>{description}</p> 
+        <p></p> {description}
         <div className="tech-project-container">
-          {icon}
-          {technology}
+          {icon} {technology} {icon2} {technology2}
         </div>
       </div>
     </div>
