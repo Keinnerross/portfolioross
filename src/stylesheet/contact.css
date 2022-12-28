@@ -5,10 +5,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-margin-top: 18vh;
+  margin-top: 18vh;
 }
 .contact-form {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .contact-form h2 {
   text-align: center;
@@ -21,7 +21,7 @@ margin-top: 18vh;
   margin: 5px 0;
   border-radius: 7px;
   background-color: var(--blackbg);
-  border: 2px solid aliceblue;
+  border: 2px solid var(--textColor);
   color: white;
   font-size: 16px;
 }
@@ -32,21 +32,23 @@ margin-top: 18vh;
   height: 120px;
   border-radius: 7px;
   background-color: var(--blackbg);
-  border: 2px solid aliceblue;
+  border: 2px solid var(--textColor);
   color: white;
   font-size: 16px;
   display: block;
   margin: 8px 0;
 }
 
-.send-button{
-    background-color: var(--purple);
-    padding: 15px;
-    color: white;
-    font-family: montserrat;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 7px;
-    cursor: pointer;
-    margin-top: 5px;
+.send-button {
+  background-color: var(--purple);
+  padding: 15px;
+  color: white;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+
 }

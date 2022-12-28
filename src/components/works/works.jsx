@@ -31,7 +31,7 @@ const Works = () => {
         <div className="box-works-container">
           <ProjectCard
             title="Spartan Pomodoro"
-            description="La técnica Pomodoro es un método para mejorar la gestión del tiempo dedicado a una actividad."
+            description="App mejorar la gestión del tiempo focalizado a una actividad usando el metodo pomodoro."
             icon={<SiReact />}
             technology="React.js"
             img="https://www.jsmastery.pro/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmovie.3bed4872.png&w=3840&q=75"

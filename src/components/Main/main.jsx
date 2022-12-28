@@ -9,7 +9,12 @@ const Main = () => {
           <section className="info">
             <h4>Hola!</h4>
             <p>
-              Me llamo KeinnerRoss ( nacido en 1998 - Venezuela) <span className="purple-1">soy diseñador y desarrollador Frontend,</span> he trabajado como freelancer en estos últimos años, ahora busco
+              Me llamo KeinnerRoss{" "}
+              <span className="purple-1">
+                {" "}
+                soy diseñador y desarrollador Frontend,
+              </span>{" "}
+              he trabajado como freelancer en estos últimos años, ahora busco
               nuevos retos donde pueda fortalecer mis habilidades y trabajar en
               equipo. Amo la naturaleza, la historia y el arte.
             </p>
@@ -22,9 +27,7 @@ const Main = () => {
             alt=""
           />
         </div>
-        
       </div>
-      
     </div>
   );
 };

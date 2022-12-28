@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <nav>
+    <nav id="nav">
       <div className="nav-container">
         <Link to="/">
           <div className="logo">

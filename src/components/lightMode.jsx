@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 
-import { BsSun } from "react-icons/bs";
+import { BsMoon, BsSun } from "react-icons/bs";
 
 const LightMode = () => {
-  const [lighMode, setLightMode] = useState(false);
-
+  const [lightMode, setLightMode] = useState(false);
   const lightModeTheme = {
     text: "#0d1117",
     bg: "#f1faee",
@@ -19,22 +18,29 @@ const LightMode = () => {
   };
 
   useEffect(() => {
+    const nav = document.getElementById("nav");
     const rootElement = document.documentElement;
-    document.body.style.transition = ".7s";
-    if (lighMode) {
+    document.body.style.transition = ".5s";
+    if (lightMode) {
+      nav.style.background = lightModeTheme.bg;
+
       rootElement.style.setProperty("--blackbg", lightModeTheme.bg);
       rootElement.style.setProperty("--textColor", lightModeTheme.text);
       rootElement.style.setProperty("--secundary", lightModeTheme.secundary);
+      nav.style.transition = "2s";
     } else {
+      nav.style.background = "var(--blackbg) opacity(80%)";
+      nav.style.transition = "0s";
+
       rootElement.style.setProperty("--blackbg", darkModeTheme.bg);
       rootElement.style.setProperty("--textColor", darkModeTheme.text);
       rootElement.style.setProperty("--secundary", darkModeTheme.secundary);
     }
-  }, [lighMode]);
+  }, [lightMode]);
 
   return (
-    <div onClick={() => setLightMode(!lighMode)}>
-      <BsSun></BsSun>
+    <div onClick={() => setLightMode(!lightMode)}>
+      {lightMode ? <BsSun /> : <BsMoon />}
     </div>
   );
 };

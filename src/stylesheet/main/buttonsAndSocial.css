@@ -21,7 +21,6 @@
   font-weight: 400;
   border-radius: 9px;
   cursor: pointer;
-  transition: 1s;
 }
 
 .button-secundary:hover {
@@ -38,9 +37,7 @@
   transform: scale(1.4);
 }
 
-.front-buttons svg {
-  transition: 1s;
-}
+
 .front-buttons svg:hover {
   cursor: pointer;
   transform: scale(1.2);
