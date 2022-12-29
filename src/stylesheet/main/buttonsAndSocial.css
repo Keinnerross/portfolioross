@@ -21,13 +21,13 @@
   font-weight: 400;
   border-radius: 9px;
   cursor: pointer;
+  color: var(--textColor);
 }
 
 .button-secundary:hover {
   background-color: var(--purple);
   transition: 0.4s;
   color: white;
-
 }
 
 .front-buttons {
@@ -36,7 +36,6 @@
   gap: 12px;
   transform: scale(1.4);
 }
-
 
 .front-buttons svg:hover {
   cursor: pointer;

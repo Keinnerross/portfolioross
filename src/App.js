@@ -7,18 +7,22 @@ import Footer from "./components/Main/footer";
 import Contact from "./components/contact";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { useRef } from "react";
 
 function App() {
+  const worksRef = useRef(null);
+  const worksRefParent = useRef(null);
+
   return (
     <>
-      <Nav />
+      <Nav workRefRecive={worksRef} />
       <Routes>
         <Route
           path="/"
           element={
             <>
               <Main />
-              <Works />
+              <Works worksRefProp={worksRef} />
               <CallToAction />
               <Footer />
             </>

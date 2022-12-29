@@ -7,18 +7,19 @@
   --purple: #218ffe;
   --cyan: #0dcaf0;
   --textColor: white;
-  scroll-behavior: smooth !important ;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 body {
-  scroll-behavior: smooth;
   font-size: 18px;
   max-width: 100%;
   margin: 0;
   font-family: poppins, sans-serif;
   background-color: var(--blackbg);
   color: var(--textColor);
-
 }
 
 body li {

@@ -9,7 +9,7 @@ const Main = () => {
           <section className="info">
             <h4>Hola!</h4>
             <p>
-              Me llamo KeinnerRoss{" "}
+              Me llamo Keinner Ross{" "}
               <span className="purple-1">
                 {" "}
                 soy diseñador y desarrollador Frontend,

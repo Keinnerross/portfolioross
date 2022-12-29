@@ -2,7 +2,15 @@ import "../stylesheet/nav.css";
 import LightMode from "./lightMode";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = ({ workRefRecive }) => {
+  const timerScroll = () => {
+    setTimeout(() => {
+      workRefRecive.current.scrollIntoView({
+        scrollBehavior: "smooth",
+      });
+    }, 300);
+  };
+
   return (
     <nav id="nav">
       <div className="nav-container">
@@ -18,9 +26,10 @@ const Nav = () => {
             <li>
               <LightMode />
             </li>
-            <a href="/#trabajos">
+            <Link to="/" onClick={() => timerScroll()}>
               <li>Trabajos</li>
-            </a>
+            </Link>
+
             <li>Cursos</li>
             <Link to="/about">
               <li>Sobre mi</li>
