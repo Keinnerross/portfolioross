@@ -16,8 +16,15 @@ const ProjectCard = ({
     setIsOpenCard(true);
   };
 
+  const [animationCloseCard, setAnimationCloseCard] = useState(false);
+
   const closeCard = () => {
-    setIsOpenCard(false);
+    setAnimationCloseCard(true);
+
+    setTimeout(() => {
+      setAnimationCloseCard(false);
+      setIsOpenCard(false);
+    }, 340);
   };
   return (
     <>
@@ -29,6 +36,7 @@ const ProjectCard = ({
         technologyPj={technology}
         technology2Pj={technology2}
         technology3Pj={technology3}
+        anim={animationCloseCard}
       ></ProjectOpenCard>
       <div className="box-work-main" onClick={() => openCard()}>
         <div
@@ -39,7 +47,7 @@ const ProjectCard = ({
         ></div>
         <div className="info-project-container">
           <h3>{title}</h3>
-          <p></p> {description}
+          {description}
           <div className="tech-project-container">
             {icon} {technology}
           </div>

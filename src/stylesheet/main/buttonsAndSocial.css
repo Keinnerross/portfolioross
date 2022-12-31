@@ -12,6 +12,7 @@
   border-radius: 9px;
   cursor: pointer;
   color: white;
+  border: solid 1.6px var(--purple);
 }
 
 .button-secundary {
@@ -34,7 +35,6 @@
   display: flex;
   justify-content: center;
   gap: 12px;
-  transform: scale(1.4);
 }
 
 .front-buttons svg:hover {

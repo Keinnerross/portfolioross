@@ -8,6 +8,7 @@ const ProjectOpenCard = ({
   technologyPj,
   technology2Pj,
   technology3Pj,
+  anim,
 }) => {
   return (
     <div
@@ -15,7 +16,11 @@ const ProjectOpenCard = ({
         open ? "project-open-container" : "project-open-container hidden"
       }
     >
-      <div className="container-project-card">
+      <div
+        className={
+          anim ? "container-project-card close-anim-card" : "container-project-card"
+        }
+      >
         <div
           className="close-card"
           onClick={() => {
@@ -54,9 +59,7 @@ const ProjectOpenCard = ({
         <div className="card-section-description-project">
           <div className="description-container-main">
             <div className="description-project">
-              <span>
-                Lorem ipsum dolor sit amet.
-              </span>
+              <span>Lorem ipsum dolor sit amet.</span>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Commodi, tempora sed suscipit fugit consequatur ipsa voluptatem

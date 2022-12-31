@@ -13,7 +13,9 @@ const ButtonsAndSocial = () => {
   return (
     <>
       <div className="buttons-about">
-        <div className="button-primary">Trabajos</div>
+        <a href="#works">
+          <div className="button-primary">Trabajos</div>
+        </a>
         <Link to="/about">
           <div className="button-secundary">Sobre Mi</div>
         </Link>

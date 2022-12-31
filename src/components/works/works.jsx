@@ -6,7 +6,7 @@ import sologomas from "../../images/icons/sologomas.png";
 
 const Works = ({ worksRefProp }) => {
   return (
-    <div className="workRefRecive" ref={worksRefProp}>
+    <div className="workRefRecive" id="works" ref={worksRefProp}>
       <div className="works-container">
         <div className="works-content-container">
           <div className="nav-works">
