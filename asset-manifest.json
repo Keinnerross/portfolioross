@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/keinnerross/portfolioross/static/css/main.fa651cb8.css",
+    "main.js": "/keinnerross/portfolioross/static/js/main.b8e73627.js",
+    "static/media/me.png": "/keinnerross/portfolioross/static/media/me.bf7c34312fcb5bdb77f1.png",
+    "static/media/sologomas.png": "/keinnerross/portfolioross/static/media/sologomas.73937aabe358598aa81c.png",
+    "index.html": "/keinnerross/portfolioross/index.html",
+    "main.fa651cb8.css.map": "/keinnerross/portfolioross/static/css/main.fa651cb8.css.map",
+    "main.b8e73627.js.map": "/keinnerross/portfolioross/static/js/main.b8e73627.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa651cb8.css",
+    "static/js/main.b8e73627.js"
+  ]
+}
