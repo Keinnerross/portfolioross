@@ -9,13 +9,12 @@
   --textColor: white;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-size: 18px;
-  max-width: 100%;
+  font-size: 17px;
   margin: 0;
   font-family: poppins, sans-serif;
   background-color: var(--blackbg);
@@ -66,4 +65,8 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track {
   border-radius: 10px;
+}
+
+.hidden {
+  display: none;
 }

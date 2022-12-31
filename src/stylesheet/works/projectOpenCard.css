@@ -1,0 +1,346 @@
+.project-open-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(20, 20, 20, 0.603);
+}
+
+.container-project-card {
+  width: 55rem;
+  position: absolute;
+  top: 10%;
+  height: 100%;
+  background-color: var(--secundary);
+  border-radius: 14px 14px 0 0;
+  z-index: 200;
+  animation: swipeCard 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  max-height: 90%;
+}
+
+.container-project-card::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.container-project-card::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.container-project-card::-webkit-scrollbar-button:increment,
+.container-project-card::-webkit-scrollbar-button {
+  display: none;
+}
+
+.container-project-card::-webkit-scrollbar-thumb {
+  background-color: var(--secundary);
+  border-radius: 20px;
+  border: 1px solid var(--purple);
+}
+
+.container-project-card::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.close-card {
+  background-color: var(--secundary);
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 5px;
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 1.4em;
+}
+
+.card-section-project {
+  width: 100%;
+}
+
+.image-project {
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 14px 14px 0 0;
+  background-position: center;
+}
+
+.inf-project-container {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.project-title-container {
+  font-size: 48px;
+  font-weight: 600;
+  padding: 0 40px;
+  color: var(--textColor);
+}
+
+.project-controls-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 22px;
+  padding: 15px 40px 0 40px;
+}
+.demo-button {
+  background-color: white;
+  color: rgb(29, 28, 28);
+  padding: 5px 8px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.demo-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 14px 28px -17px rgba(0, 0, 0, 0.409);
+}
+.repo-button {
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.repo-button:hover {
+  text-decoration: underline;
+}
+
+.card-section-description-project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.description-project-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.description-container-main {
+  width: 90%;
+  display: flex;
+}
+.description-project {
+  width: 75%;
+}
+
+.description-project span {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.description-project p {
+  padding: 0;
+  margin: 5px 0;
+}
+
+.skills-project {
+  width: 25%;
+}
+
+.skills-project span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@keyframes swipeCard {
+  0% {
+    transform: translateY(700px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .container-project-card {
+    overflow-y: scroll;
+  }
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 575px) and (max-width: 1200px) {
+  .card-section-project {
+    flex-direction: row;
+  }
+  .skills-project {
+    width: 100%;
+  }
+
+  .description-container-main {
+    display: block;
+  }
+
+  .project-title-container {
+    font-size: 22px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  .image-project {
+    width: 100%;
+    height: 280px;
+    background-color: rebeccapurple;
+    background-size: cover;
+  }
+
+  .description-project-container {
+    font-size: 15px;
+  }
+  .description-project {
+    width: 100%;
+  }
+  .container-project-card {
+    width: 100vw;
+    max-width: 100%;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .inf-project-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .info-project-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-controls-container {
+    padding: 0;
+  }
+
+  .card-section-description-project {
+    font-size: 13px;
+    height: 20%;
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .demo-button {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .repo-button {
+    font-size: 16px;
+  }
+
+  .description-project span {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px) {
+  .card-section-project {
+    flex-direction: row;
+  }
+  .skills-project {
+    width: 100%;
+  }
+
+  .description-container-main {
+    display: block;
+  }
+
+  .project-title-container {
+    font-size: 22px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  .image-project {
+    width: 100%;
+    height: 180px;
+    background-color: rebeccapurple;
+    background-size: cover;
+  }
+
+  .description-project-container {
+    font-size: 15px;
+  }
+  .description-project {
+    width: 100%;
+  }
+  .container-project-card {
+    width: 100vw;
+    max-width: 100%;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .inf-project-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  .info-project-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-controls-container {
+    padding: 0;
+  }
+
+  .card-section-description-project {
+    font-size: 13px;
+    height: 20%;
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .demo-button {
+    font-size: 12px;
+    padding: 2px;
+  }
+
+  .repo-button {
+    font-size: 16px;
+  }
+
+  .description-project span {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+}

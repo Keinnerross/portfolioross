@@ -37,7 +37,31 @@
   padding: 0;
 }
 
-.tech-project-container{
+.tech-project-container {
   color: var(--purple);
   font-style: italic;
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 575px) and (max-width: 1200px) {
+  .box-work-main {
+    display: inline;
+  }
+
+  .img-project-container {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px) {
+  .box-work-main {
+    display: inline;
+  }
+
+  .img-project-container {
+    width: 100%;
+    height: 300px;
+  }
 }

@@ -19,18 +19,15 @@ const About = () => {
           Tus proyectos al siguiente nivel con{" "}
           <span className="purple-1">JavaScript:</span>{" "}
         </h2>
-        <span>
+        <p>
           Soy un programador full stack con habilidades en JavaScript, capaz de
           desarrollar aplicaciones web completas tanto en el lado del cliente
-          como en el lado del servidor. Tengo experiencia en HTML, CSS y
-          JavaScript para el <span className="purple-1">front-end</span>, así
-          como en Node.js y bases de datos para el{" "}
-          <span className="purple-1">back-end.</span> Además, tengo una sólida
+          como en el lado del servidor. Tengo experiencia en HTML, CSS y JavaScript para el <span className="purple-1">front-end</span>, así como en Node.js y bases de datos para el <span className="purple-1">back-end.</span> Además, tengo una sólida
           comprensión de la arquitectura de la aplicación y cómo se integran
           todas las piezas. En resumen, soy un experto en todas las capas de una
           aplicación web y estoy capacitado para trabajar de manera eficiente en
           cada una de ellas.
-        </span>
+        </p>
       </div>
 
       <div className="skills-list">

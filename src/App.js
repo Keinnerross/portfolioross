@@ -11,7 +11,6 @@ import { useRef } from "react";
 
 function App() {
   const worksRef = useRef(null);
-  const worksRefParent = useRef(null);
 
   return (
     <>

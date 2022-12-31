@@ -2,6 +2,7 @@ import ProjectCard from "./projectCard";
 import "../../stylesheet/works/works.css";
 import { SiReact, SiNodedotjs } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import sologomas from "../../images/icons/sologomas.png";
 
 const Works = ({ worksRefProp }) => {
   return (
@@ -25,6 +26,8 @@ const Works = ({ worksRefProp }) => {
               description="App mejorar la gestión del tiempo focalizado a una actividad usando el metodo pomodoro."
               icon={<SiReact />}
               technology="React.js"
+              technology2="Webpack"
+              technology3="Npm"
               img="https://www.jsmastery.pro/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmovie.3bed4872.png&w=3840&q=75"
             />
 
@@ -42,7 +45,8 @@ const Works = ({ worksRefProp }) => {
               description="Sitio web corporativo diseñado para enseñar productos y brindar información a los clientes"
               icon={<TbBrandNextjs />}
               technology="Next.js"
-              img="https://scontent.fscl12-1.fna.fbcdn.net/v/t39.30808-6/295067382_2878054549155500_1633167168815247920_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=0kMWG2IGT2gAX_4np7v&_nc_ht=scontent.fscl12-1.fna&oh=00_AfBW7HX-1TqjxO6QYu2Qa6cPn7CpGFu0Uue6nkgEDgXjiQ&oe=63AFED02"
+              img={sologomas}
+              // img="https://scontent.fscl12-1.fna.fbcdn.net/v/t39.30808-6/295067382_2878054549155500_1633167168815247920_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=e3f864&_nc_ohc=0kMWG2IGT2gAX_4np7v&_nc_ht=scontent.fscl12-1.fna&oh=00_AfBW7HX-1TqjxO6QYu2Qa6cPn7CpGFu0Uue6nkgEDgXjiQ&oe=63AFED02"
             />
             <ProjectCard
               title="SoloGomas Belts.app"
