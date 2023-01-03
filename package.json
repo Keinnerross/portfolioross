@@ -1,6 +1,6 @@
 {
   "name": "portfolioross",
-  "homepage": "https://github.com/keinnerross/portfolioross",
+  "homepage": "https://keinnerross.github.io/portfolioross",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^ss13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "babel-plugin-macros": "^3.1.0",
     "dark-mode-toggle": "^0.14.3",
