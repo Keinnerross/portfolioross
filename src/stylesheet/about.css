@@ -1,16 +1,16 @@
 .skills-container {
-  margin-top: 140px;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .skills-content-container {
   width: 80%;
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 
 .info-skills-container p {
@@ -81,7 +81,7 @@
 /* Escritorio pequeño / tablet */
 @media only screen and (min-width: 575px) and (max-width: 1200px) {
   .skills-container {
-    margin-top: 10px;
+    height: auto;
   }
   .skills-content-container p {
     width: 100%;
@@ -104,7 +104,7 @@
 /* Teléfonos */
 @media only screen and (max-width: 575px) {
   .skills-container {
-    margin-top: 10px;
+    height: auto;
   }
   .skills-content-container p {
     width: 100%;

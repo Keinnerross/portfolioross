@@ -68,11 +68,6 @@ nav {
   /* border-bottom: solid 2px white; */
 }
 
-.button-cv-container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
-}
 .button-cv {
   max-width: 110px;
   padding: 9px;

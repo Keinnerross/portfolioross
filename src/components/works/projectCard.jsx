@@ -6,10 +6,13 @@ const ProjectCard = ({
   img,
   title,
   description,
+  descriptionLong,
   icon,
   technology,
   technology2,
   technology3,
+  statepj,
+  yearpj,
 }) => {
   const [isOpenCard, setIsOpenCard] = useState(false);
   const openCard = () => {
@@ -33,10 +36,13 @@ const ProjectCard = ({
         close={() => closeCard()}
         imgCard={img}
         titleProject={title}
+        descriptionPj={descriptionLong}
         technologyPj={technology}
         technology2Pj={technology2}
         technology3Pj={technology3}
         anim={animationCloseCard}
+        state={statepj}
+        year={yearpj}
       ></ProjectOpenCard>
       <div className="box-work-main" onClick={() => openCard()}>
         <div

@@ -1,5 +1,5 @@
 .box-work-main {
-  width: 32em;
+  width: 50%;
   height: 170px;
   cursor: pointer;
   display: flex;
@@ -46,11 +46,20 @@
 @media only screen and (min-width: 575px) and (max-width: 1200px) {
   .box-work-main {
     display: inline;
+    padding: 0;
   }
 
   .img-project-container {
     width: 100%;
-    height: 500px;
+    height: 300px;
+  }
+
+  .info-project-container {
+    margin: 0;
+  }
+
+  .box-work-main:hover {
+    background-color: transparent;
   }
 }
 
@@ -65,7 +74,11 @@
     height: 300px;
   }
 
-  .info-project-container{
+  .info-project-container {
     margin: 0;
+  }
+
+  .box-work-main:hover {
+    background-color: transparent;
   }
 }

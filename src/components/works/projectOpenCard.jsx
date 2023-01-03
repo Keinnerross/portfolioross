@@ -5,10 +5,13 @@ const ProjectOpenCard = ({
   close,
   imgCard,
   titleProject,
+  descriptionPj,
   technologyPj,
   technology2Pj,
   technology3Pj,
   anim,
+  state,
+  year,
 }) => {
   return (
     <div
@@ -18,7 +21,9 @@ const ProjectOpenCard = ({
     >
       <div
         className={
-          anim ? "container-project-card close-anim-card" : "container-project-card"
+          anim
+            ? "container-project-card close-anim-card"
+            : "container-project-card"
         }
       >
         <div
@@ -59,17 +64,19 @@ const ProjectOpenCard = ({
         <div className="card-section-description-project">
           <div className="description-container-main">
             <div className="description-project">
-              <span>Lorem ipsum dolor sit amet.</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Commodi, tempora sed suscipit fugit consequatur ipsa voluptatem
-                odit, totam
-              </p>
+              <span>
+                <span
+                  className={state == "Finalizado" ? "finalizado" : "en-curso"}
+                >
+                  {state}
+                </span>{" "}
+                <p className="year-pj">{year}</p>
+              </span>
+              <p>{descriptionPj}</p>
             </div>
             <div className="skills-project">
-              <span>Tecnologías:</span>
-              <br />
-              {technologyPj} {technology2Pj}, {technology3Pj}.
+              <span>Tecnologías:</span> {technologyPj} {technology2Pj}{" "}
+              {technology3Pj}.
             </div>
           </div>
         </div>

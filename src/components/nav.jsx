@@ -31,7 +31,7 @@ const Nav = ({ workRefRecive }) => {
   return (
     <>
       <div className="nav-mobile">
-        <Link to="/">
+        <Link to="/portfolioross">
           <div className="logo">
             <span className="img-me"></span>
             <span className="logotype">KeinnerRoss</span>
@@ -62,7 +62,7 @@ const Nav = ({ workRefRecive }) => {
                 <LightMode />
               </li>
               <Link
-                to="/"
+                to="/portfolioross"
                 onClick={() => {
                   timerScroll();
                   closeLateral();
@@ -88,7 +88,7 @@ const Nav = ({ workRefRecive }) => {
       </div>
       <nav id="nav">
         <div className="nav-container">
-          <Link to="/">
+          <Link to="/portfolioross">
             <div className="logo">
               <span className="img-me"></span>
               <span className="logotype">KeinnerRoss</span>
@@ -100,7 +100,7 @@ const Nav = ({ workRefRecive }) => {
               <li>
                 <LightMode />
               </li>
-              <Link to="/" onClick={() => timerScroll()}>
+              <Link to="/portfolioross" onClick={() => timerScroll()}>
                 <li>Trabajos</li>
               </Link>
 

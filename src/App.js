@@ -17,7 +17,7 @@ function App() {
       <Nav workRefRecive={worksRef} />
       <Routes>
         <Route
-          path="/"
+          path="/portfolioross"
           element={
             <>
               <Main />

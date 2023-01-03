@@ -11,12 +11,14 @@ const LightMode = () => {
       text: "#0d1117",
       bg: "#f1faee",
       secundary: "#dce2d9",
+      green: "green",
     };
 
     const darkModeTheme = {
       text: "white",
       bg: "#0d1117",
       secundary: "#1c2833",
+      green: "greenyellow",
     };
     const nav = document.getElementById("nav");
     const rootElement = document.documentElement;
@@ -27,6 +29,8 @@ const LightMode = () => {
       rootElement.style.setProperty("--blackbg", lightModeTheme.bg);
       rootElement.style.setProperty("--textColor", lightModeTheme.text);
       rootElement.style.setProperty("--secundary", lightModeTheme.secundary);
+      rootElement.style.setProperty("--green", lightModeTheme.green);
+
       nav.style.transition = "2s";
     } else {
       nav.style.background = "var(--blackbg) opacity(80%)";
@@ -35,6 +39,7 @@ const LightMode = () => {
       rootElement.style.setProperty("--blackbg", darkModeTheme.bg);
       rootElement.style.setProperty("--textColor", darkModeTheme.text);
       rootElement.style.setProperty("--secundary", darkModeTheme.secundary);
+      rootElement.style.setProperty("--green", darkModeTheme.green);
     }
   }, [lightMode]);
 

@@ -1,5 +1,6 @@
 import "../../stylesheet/main/main.css";
 import ButtonsAndSocial from "./buttonsAndSocial";
+import pcs from "../../images/icons/pcs.png";
 
 const Main = () => {
   return (
@@ -22,10 +23,7 @@ const Main = () => {
           <ButtonsAndSocial />
         </div>
         <div className="img-about-container">
-          <img
-            src="https://images.pexels.com/photos/115655/pexels-photo-115655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt=""
-          />
+          <img src={pcs} alt="" />
         </div>
       </div>
     </div>
