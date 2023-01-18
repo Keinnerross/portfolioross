@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/portfolioross/static/css/main.9741152f.css",
-    "main.js": "/portfolioross/static/js/main.47984165.js",
+    "main.js": "/portfolioross/static/js/main.efce7683.js",
+    "static/media/spartan-cover.jpg": "/portfolioross/static/media/spartan-cover.8b45f8b052dbed82e9c6.jpg",
+    "static/media/linkbio-cover.jpg": "/portfolioross/static/media/linkbio-cover.11c7c7814d288818d9e4.jpg",
     "static/media/pcs.png": "/portfolioross/static/media/pcs.dda0ff05ed45559dcf14.png",
     "static/media/appsologomas.webp": "/portfolioross/static/media/appsologomas.8a1a299626d55a1861a0.webp",
     "static/media/me.png": "/portfolioross/static/media/me.bf7c34312fcb5bdb77f1.png",
-    "static/media/movie.webp": "/portfolioross/static/media/movie.fd87b38d8af78130b955.webp",
     "static/media/appart.webp": "/portfolioross/static/media/appart.adcd92922702379557b0.webp",
-    "static/media/linktree.png": "/portfolioross/static/media/linktree.9df472b3f1ca93831bb5.png",
     "static/media/sologomas.png": "/portfolioross/static/media/sologomas.73937aabe358598aa81c.png",
     "static/media/ninja.png": "/portfolioross/static/media/ninja.03393e9166cae145f2f8.png",
     "index.html": "/portfolioross/index.html",
     "main.9741152f.css.map": "/portfolioross/static/css/main.9741152f.css.map",
-    "main.47984165.js.map": "/portfolioross/static/js/main.47984165.js.map"
+    "main.efce7683.js.map": "/portfolioross/static/js/main.efce7683.js.map"
   },
   "entrypoints": [
     "static/css/main.9741152f.css",
-    "static/js/main.47984165.js"
+    "static/js/main.efce7683.js"
   ]
 }
