@@ -13,6 +13,8 @@ const ProjectCard = ({
   technology3,
   statepj,
   yearpj,
+  linkRepo,
+  linkDemo,
 }) => {
   const [isOpenCard, setIsOpenCard] = useState(false);
   const openCard = () => {
@@ -43,6 +45,8 @@ const ProjectCard = ({
         anim={animationCloseCard}
         state={statepj}
         year={yearpj}
+        linkRepoOpen={linkRepo}
+        linkDemoOpen={linkDemo}
       ></ProjectOpenCard>
       <div className="box-work-main" onClick={() => openCard()}>
         <div

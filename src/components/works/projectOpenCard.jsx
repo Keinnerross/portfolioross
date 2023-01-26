@@ -12,6 +12,8 @@ const ProjectOpenCard = ({
   anim,
   state,
   year,
+  linkRepoOpen,
+  linkDemoOpen,
 }) => {
   return (
     <div
@@ -49,12 +51,15 @@ const ProjectOpenCard = ({
                 <span>{titleProject}</span>
               </div>
               <div className="project-controls-container">
-                <span className="demo-button">
-                  {" "}
-                  <BsPlayFill size={25} />
-                  Demo
-                </span>
-                <span className="repo-button">Repo</span>
+                <a href={linkDemoOpen} target="_blank">
+                  <span className="demo-button">
+                    <BsPlayFill size={25} />
+                    Demo
+                  </span>
+                </a>
+                <a href={linkRepoOpen} target="_blank">
+                  <span className="repo-button">Repo</span>
+                </a>
               </div>
             </div>
           </div>
@@ -68,14 +73,14 @@ const ProjectOpenCard = ({
                 <span
                   className={state == "Finalizado" ? "finalizado" : "en-curso"}
                 >
-                  {state}
-                </span>{" "}
+                  {state + " "}
+                </span>
                 <p className="year-pj">{year}</p>
               </span>
               <p>{descriptionPj}</p>
             </div>
             <div className="skills-project">
-              <span>Tecnologías:</span> {technologyPj} {technology2Pj}{" "}
+              <span>Tecnologías:</span> {technologyPj} {technology2Pj}
               {technology3Pj}.
             </div>
           </div>

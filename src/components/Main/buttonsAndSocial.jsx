@@ -21,13 +21,30 @@ const ButtonsAndSocial = () => {
         </Link>
       </div>
       <div className="front-buttons">
-        <SlSocialLinkedin />
-        <VscGithubAlt />
-        <SlSocialInstagram />
-        <RxTwitterLogo />
-        <SiTiktok />
-        <RxDiscordLogo />
-        <SlSocialYoutube />
+        <a
+          href="https://www.linkedin.com/in/keinner-ross-durantt-28bb231b5/"
+          target="_blank"
+        >
+          <SlSocialLinkedin size={24} />
+        </a>
+        <a href="https://github.com/Keinnerross/" target="_blank">
+          <VscGithubAlt size={24} />
+        </a>
+        <a href="https://www.instagram.com/keinnerross/" target="_blank">
+          <SlSocialInstagram size={24} />
+        </a>
+        <a href="https://twitter.com/keinnerross/" target="_blank">
+          <RxTwitterLogo size={24} />
+        </a>
+        <a href="https://www.tiktok.com/@keinnerross?lang=es" target="_blank">
+          <SiTiktok size={24} />
+        </a>
+        <a href="https://discord.gg/rWH4zN4WN4" target="_blank">
+          <RxDiscordLogo size={24} />
+        </a>
+        <a href="https://www.youtube.com/@keinnerross.6223" target="_blank">
+          <SlSocialYoutube size={24} />
+        </a>
       </div>
     </>
   );

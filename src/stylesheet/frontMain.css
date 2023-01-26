@@ -40,6 +40,10 @@
     display: flex;
 }
 
+.front-buttons a{
+    color: var(--textColor);
+}
+
 .button-front{
     width: 30px;
     height: 30px;
@@ -128,5 +132,6 @@
 
 
 
-/* Scroll animation */
+
+
 

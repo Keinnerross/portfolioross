@@ -34,7 +34,11 @@
 .front-buttons {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 15px;
+}
+
+.front-buttons a{
+  color: var(--textColor);
 }
 
 .front-buttons svg:hover {

@@ -10,10 +10,10 @@ const Main = () => {
           <section className="info">
             <h4>Hola!</h4>
             <p>
-              Me llamo Keinner Ross{" "}
+              Me llamo Keinner Ross y{" "}
               <span className="purple-1">
                 {" "}
-                soy diseñador y desarrollador Frontend,
+                soy desarrollador Fullstack con Javascript.
               </span>{" "}
               he trabajado como freelancer en estos últimos años, ahora busco
               nuevos retos donde pueda fortalecer mis habilidades y trabajar en
