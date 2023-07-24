@@ -2,29 +2,136 @@ import ProjectCard from "./projectCard";
 import "../../stylesheet/works/works.css";
 import { SiReact, SiNodedotjs } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import sologomas from "../../images/icons/sologomas.png";
-import spartan from "../../images/worksImg/spartan-cover.jpg";
-import linkbio from "../../images/worksImg/linkbio-cover.jpg";
-import appsologomas from "../../images/worksImg/appsologomas.webp";
-import ninja from "../../images/worksImg/ninja.png";
-import appar from "../../images/worksImg/appart.webp";
+import { Data } from "./worksData.js";
+import { useState } from "react";
 
 const Works = ({ worksRefProp }) => {
+  const [categorySelect, setCategorySelect] = useState("All");
+
+  const handleCategory = (e) => {
+    setCategorySelect(e.target.value);
+  };
+
+  const categoryRender = () => {
+    if (categorySelect == "All") {
+      return Data.map((work, i) => (
+        <ProjectCard
+          key={i}
+          title={work.title}
+          description={work.description}
+          descriptionLong={work.descriptionLong}
+          // icon={<SiReact />}
+          technology={work.technology}
+          technology2={work.technology2}
+          technology3={work.technology3}
+          img={work.img}
+          statepj={work.statepj}
+          yearpj={work.yearpj}
+          linkRepo={work.linkRepo}
+          linkDemo={work.linkDemo}
+        />
+      ));
+    } else if (categorySelect == "CMS/Wordpress") {
+      const dataFilter = Data.filter((work) => work.category == "wp");
+      return dataFilter.map((work, i) => (
+        <ProjectCard
+          key={i}
+          title={work.title}
+          description={work.description}
+          descriptionLong={work.descriptionLong}
+          // icon={<SiReact />}
+          technology={work.technology}
+          technology2={work.technology2}
+          technology3={work.technology3}
+          img={work.img}
+          statepj={work.statepj}
+          yearpj={work.yearpj}
+          linkRepo={work.linkRepo}
+          linkDemo={work.linkDemo}
+        />
+      ));
+    } else if (categorySelect == "Web") {
+      const dataFilter = Data.filter((work) => work.category == "web");
+      return dataFilter.map((work, i) => (
+        <ProjectCard
+          key={i}
+          title={work.title}
+          description={work.description}
+          descriptionLong={work.descriptionLong}
+          // icon={<SiReact />}
+          technology={work.technology}
+          technology2={work.technology2}
+          technology3={work.technology3}
+          img={work.img}
+          statepj={work.statepj}
+          yearpj={work.yearpj}
+          linkRepo={work.linkRepo}
+          linkDemo={work.linkDemo}
+        />
+      ));
+    } else if (categorySelect == "Front") {
+      const dataFilter = Data.filter((work) => work.category == "front");
+      return dataFilter.map((work, i) => (
+        <ProjectCard
+          key={i}
+          title={work.title}
+          description={work.description}
+          descriptionLong={work.descriptionLong}
+          // icon={<SiReact />}
+          technology={work.technology}
+          technology2={work.technology2}
+          technology3={work.technology3}
+          img={work.img}
+          statepj={work.statepj}
+          yearpj={work.yearpj}
+          linkRepo={work.linkRepo}
+          linkDemo={work.linkDemo}
+        />
+      ));
+    } else if (categorySelect == "Mobil") {
+      const dataFilter = Data.filter((work) => work.category == "mobil");
+      return dataFilter.map((work, i) => (
+        <ProjectCard
+          key={i}
+          title={work.title}
+          description={work.description}
+          descriptionLong={work.descriptionLong}
+          // icon={<SiReact />}
+          technology={work.technology}
+          technology2={work.technology2}
+          technology3={work.technology3}
+          img={work.img}
+          statepj={work.statepj}
+          yearpj={work.yearpj}
+          linkRepo={work.linkRepo}
+          linkDemo={work.linkDemo}
+        />
+      ));
+    } else {
+      return <p>No results found</p>;
+    }
+  };
+
   return (
     <div className="workRefRecive" id="works" ref={worksRefProp}>
       <div className="works-container">
         <div className="works-content-container">
           <div className="nav-works">
             <h4>Trabajos</h4>
-            <select defaultValue="Node">
-              <option>React</option>
-              <option>Node</option>
-              <option>Value 3</option>
+            <select defaultValue="Node" onChange={(e) => handleCategory(e)}>
+              <option>All</option>
+              <option>Web</option>
+              <option>Mobil</option>
+              <option>Front</option>
+              <option>CMS/Wordpress</option>
             </select>
           </div>
 
           <div className="box-works-container">
-            <ProjectCard
+            {categoryRender()}
+
+            <>
+              {/* <ProjectCard
               title="Spartan Pomodoro"
               description="App mejorar la gestión del tiempo focalizado a una actividad usando el metodo pomodoro."
               descriptionLong='La aplicación se centra en ayudar a las personas a mejorar su gestión del tiempo al utilizar el método Pomodoro. El método Pomodoro es una técnica de productividad que se basa en dividir el trabajo en intervalos de tiempo cortos, denominados "Pomodoros", seguidos por breves descansos. La idea es que al dividir el trabajo en intervalos más cortos y concentrarse en una sola tarea durante un período de tiempo limitado.'
@@ -33,13 +140,13 @@ const Works = ({ worksRefProp }) => {
               technology2="Webpack"
               technology3="Npm"
               img={spartan}
-              statepj="En curso"
+              statepj="Finalizado"
               yearpj="2022"
               linkRepo="https://github.com/Keinnerross/Espartan-pomodoro-app"
               linkDemo="https://keinnerross.github.io/Espartan-pomodoro-app/"
-            />
+            /> */}
 
-            <ProjectCard
+              {/* <ProjectCard
               title="Link in Bio"
               description="Menú personalizado dónde están todos los links a redes sociales, website, etc..."
               descriptionLong="Un menú personalizado es una lista de enlaces a sitios web y redes sociales que seleccionas y organizas de manera específica para tus necesidades. Estos enlaces pueden incluir tu sitio web, tus redes sociales como Facebook, Twitter, Instagram y LinkedIn, y otros sitios que consideres útiles para tus seguidores o clientes. El menú personalizado se puede colocar en cualquier lugar de tu sitio web o blog, y es una manera eficiente de permitir a tus visitantes acceder fácilmente a toda tu presencia en línea. "
@@ -52,18 +159,18 @@ const Works = ({ worksRefProp }) => {
               linkRepo="https://github.com/Keinnerross/linkbio"
               linkDemo="https://keinnerross.github.io/linkbio/"
             />
-          </div>
-          <div className="box-works-container">
+          </div> */}
+              {/* <div className="box-works-container">
             <ProjectCard
               title="SoloGomas Website"
               description="Sitio web corporativo diseñado para enseñar productos y brindar información a los clientes"
               descriptionLong="Un sitio web corporativo es una plataforma en línea que se utiliza para promocionar y vender productos o servicios de una empresa o negocio. Estos sitios suelen incluir información detallada sobre los productos o servicios ofrecidos, así como también información de contacto, direcciones y horarios de atención al cliente. Además, los sitios web corporativos a menudo incluyen secciones para proporcionar información sobre la empresa, como su historia, sus valores y su visión."
               icon={<TbBrandNextjs />}
               technology="Next.js"
-              technology2="React.js"
+              technology2="React.js "
               technology3="Webpack"
               img={sologomas}
-              statepj="En curso"
+              statepj="Finalizado"
               yearpj="2023"
               linkRepo="https://github.com/Keinnerross"
               linkDemo="https://sologomas.cl/"
@@ -84,8 +191,8 @@ const Works = ({ worksRefProp }) => {
               linkRepo="https://github.com/Keinnerross/SologomasApp/"
               linkDemo="https://keinnerross.github.io/SologomasApp/"
             />
-          </div>
-          <div className="box-works-container">
+          </div> */}
+              {/* <div className="box-works-container">
             <ProjectCard
               title="Ninja Tap"
               description="Juego de medir tu velocidad de clicks/taps contra reloj, ¡divertido y adictivo!"
@@ -107,7 +214,8 @@ const Works = ({ worksRefProp }) => {
               img={appar}
               statepj="En curso"
               yearpj="2022"
-            />
+            />*/}
+            </>
           </div>
         </div>
       </div>

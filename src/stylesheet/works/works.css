@@ -21,10 +21,12 @@
   margin: 0;
 }
 .box-works-container {
+  width: 80vw;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 60px;
-  gap: 10px;
+  row-gap: 30px;
 }
 
 .workRefRecive {
@@ -37,9 +39,7 @@
     display: block;
     margin: 0;
     margin-bottom: 50px;
-
   }
-  
 }
 
 /* Teléfonos */

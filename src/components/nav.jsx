@@ -104,7 +104,7 @@ const Nav = ({ workRefRecive }) => {
                 <li>Trabajos</li>
               </Link>
 
-              <li>Cursos</li>
+              <li>Blog</li>
               <Link to="/about">
                 <li>Sobre mi</li>
               </Link>

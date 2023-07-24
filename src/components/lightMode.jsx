@@ -9,8 +9,10 @@ const LightMode = () => {
   useEffect(() => {
     const lightModeTheme = {
       text: "#0d1117",
-      bg: "#f1faee",
-      secundary: "#dce2d9",
+      bg: "rgb(240, 231, 219)",
+      secundary: "rgb(222 214 203)",
+      // bg: "#f1faee",
+      // secundary: "#dce2d9",
       green: "green",
     };
 
