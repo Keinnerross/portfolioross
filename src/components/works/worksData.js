@@ -4,6 +4,13 @@ import linkbio from "../../images/worksImg/linkbio-cover.jpg";
 import appsologomas from "../../images/worksImg/appsologomas.webp";
 import appar from "../../images/worksImg/appart.webp";
 
+import pulperia from "../../images/worksImg/pulperia.jpg";
+import integrital from "../../images/worksImg/integrital.png";
+import jaxconstruction from "../../images/worksImg/jaxconstruction.jpg";
+import Yami from "../../images/worksImg/yami.png";
+import mario from "../../images/worksImg/mario.png";
+import techsopher from "../../images/worksImg/techsopher.jpg";
+
 export const Data = [
   {
     title: "Astra Pomodoro",
@@ -49,8 +56,8 @@ export const Data = [
     technology3: "Webpack",
     statepj: "Finalizado",
     yearpj: "2023",
-    linkRepo: "https://github.com/Keinnerross",
-    linkDemo: "https://sologomas.cl/",
+    linkRepo: "https://github.com/Keinnerross/sologomas-web",
+    linkDemo: "https://keinnerross.github.io/sologomas-web/",
     category: "web",
   },
   {
@@ -85,28 +92,34 @@ export const Data = [
     category: "mobil",
   },
   {
-    title: "Modulo Super Mario",
+    title: "Módulo Super Mario",
     category: "front",
+    img: mario,
   },
   {
     title: "Tecnocrático",
     category: "front",
+    img: techsopher,
   },
 
   {
     title: "Pulperia 5 Estrellas",
     category: "wp",
+    img: pulperia,
   },
   {
     title: "JaxConstruction",
     category: "wp",
+    img: jaxconstruction,
   },
   {
     title: "Integrital Edge",
     category: "wp",
+    img: integrital,
   },
   {
     title: "Yami Beautiful Salon",
     category: "wp",
+    img: Yami,
   },
 ];
