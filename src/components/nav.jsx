@@ -2,12 +2,14 @@ import "../stylesheet/nav.css";
 import LightMode from "./lightMode";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
+import NavServices from "./navServices";
 
 const Nav = ({ workRefRecive }) => {
   const [lateralMenu, setLateralMenu] = useState(false);
   const [animationClose, setAnimationClose] = useState(false);
-
+  const [isOpenService, setIsOpenService] = useState(false);
   const toggleLateral = () => {
     setLateralMenu(!lateralMenu);
   };
@@ -26,6 +28,12 @@ const Nav = ({ workRefRecive }) => {
         scrollBehavior: "smooth",
       });
     }, 300);
+  };
+
+  const handleOpenService = () => {
+    setTimeout(() => {
+      setIsOpenService(false);
+    }, 400);
   };
 
   return (
@@ -100,11 +108,28 @@ const Nav = ({ workRefRecive }) => {
               <li>
                 <LightMode />
               </li>
+              <Link to="#">
+                <li
+                  className="serviceContainer"
+                  onMouseEnter={() => setIsOpenService(true)}
+                >
+                  <div>
+                    Servicios <MdOutlineKeyboardArrowDown />
+                  </div>
+                  <NavServices
+                    isOpen={isOpenService}
+                    handleOpen={handleOpenService}
+                  />
+                </li>
+              </Link>
+
               <Link to="/portfolioross" onClick={() => timerScroll()}>
                 <li>Trabajos</li>
               </Link>
+              <Link to="/about">
+                <li>Recursos</li>
+              </Link>
 
-              <li>Blog</li>
               <Link to="/about">
                 <li>Sobre mi</li>
               </Link>

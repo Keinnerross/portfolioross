@@ -223,3 +223,9 @@ nav {
     height: 50px;
   }
 }
+
+.serviceContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
