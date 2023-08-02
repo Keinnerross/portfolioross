@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioross/static/css/main.c83faff8.css",
-    "main.js": "/portfolioross/static/js/main.9e2b4286.js",
+    "main.css": "/portfolioross/static/css/main.09e8870c.css",
+    "main.js": "/portfolioross/static/js/main.a97eb454.js",
     "static/media/mario.png": "/portfolioross/static/media/mario.70fec6318eb5bc86e3a5.png",
     "static/media/yami.png": "/portfolioross/static/media/yami.d33c785238ad4b867c03.png",
     "static/media/integrital.png": "/portfolioross/static/media/integrital.dab5051678386185f38c.png",
@@ -14,13 +14,14 @@
     "static/media/appsologomas.webp": "/portfolioross/static/media/appsologomas.8a1a299626d55a1861a0.webp",
     "static/media/me.png": "/portfolioross/static/media/me.bf7c34312fcb5bdb77f1.png",
     "static/media/appart.webp": "/portfolioross/static/media/appart.adcd92922702379557b0.webp",
+    "static/media/skillsDesign.png": "/portfolioross/static/media/skillsDesign.ddd61618bfb9e0cab08f.png",
     "static/media/sologomas.png": "/portfolioross/static/media/sologomas.73937aabe358598aa81c.png",
     "index.html": "/portfolioross/index.html",
-    "main.c83faff8.css.map": "/portfolioross/static/css/main.c83faff8.css.map",
-    "main.9e2b4286.js.map": "/portfolioross/static/js/main.9e2b4286.js.map"
+    "main.09e8870c.css.map": "/portfolioross/static/css/main.09e8870c.css.map",
+    "main.a97eb454.js.map": "/portfolioross/static/js/main.a97eb454.js.map"
   },
   "entrypoints": [
-    "static/css/main.c83faff8.css",
-    "static/js/main.9e2b4286.js"
+    "static/css/main.09e8870c.css",
+    "static/js/main.a97eb454.js"
   ]
 }
