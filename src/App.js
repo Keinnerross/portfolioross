@@ -2,6 +2,7 @@ import Nav from "./components/nav";
 import Main from "./components/Main/main";
 import CallToAction from "./components/Main/callToAction";
 import About from "./components/about";
+import SkillsAbout from "./components/skillsAbout";
 import Works from "./components/works/works";
 import Footer from "./components/Main/footer";
 import Contact from "./components/contact";
@@ -11,7 +12,7 @@ import { useRef } from "react";
 
 function App() {
   const worksRef = useRef(null);
-  
+
   return (
     <>
       <Nav workRefRecive={worksRef} />
@@ -21,6 +22,7 @@ function App() {
           element={
             <>
               <Main />
+              <SkillsAbout />
               <Works worksRefProp={worksRef} />
               <CallToAction />
               <Footer />
