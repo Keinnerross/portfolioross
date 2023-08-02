@@ -118,7 +118,11 @@ const Works = ({ worksRefProp }) => {
         <div className="works-content-container">
           <div className="nav-works">
             <h4>Trabajos</h4>
-            <select defaultValue="Node" onChange={(e) => handleCategory(e)}>
+            <select
+              className="selectWorks"
+              defaultValue="Node"
+              onChange={(e) => handleCategory(e)}
+            >
               <option>All</option>
               <option>Web</option>
               <option>Mobil</option>

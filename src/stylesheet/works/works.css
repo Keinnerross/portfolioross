@@ -42,6 +42,24 @@
   }
 }
 
+.selectWorks {
+  outline: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-family: "Montserrat";
+  background-color: aliceblue;
+
+  cursor: pointer;
+}
+.selectWorks option {
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+option:checked {
+  background-color: aliceblues;
+}
+
 /* Teléfonos */
 @media only screen and (max-width: 575px) {
   .box-works-container {

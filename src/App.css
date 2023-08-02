@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
   /* --blackbg: #202023; #161618  #0d1117*/
   --blackbg: #0d1117;
-  --secundary: #1c2833;
+  /* --secundary: #1c2833; */
+  --secundary: #25272c;
+  --tertiary: #25272c;
   --purple: #218ffe;
   --cyan: #0dcaf0;
   --textColor: white;
@@ -15,11 +16,12 @@ html {
 }
 
 body {
-  font-size: 17px;
+  font-size: 16px;
   margin: 0;
   font-family: poppins, sans-serif;
   background-color: var(--blackbg);
   color: var(--textColor);
+  overflow-x: hidden;
 }
 
 body li {
@@ -43,6 +45,10 @@ body .cyan-1 {
 
 body .purple-1 {
   color: var(--purple);
+}
+
+.weight {
+  font-weight: 500;
 }
 
 body::-webkit-scrollbar {
@@ -81,4 +87,5 @@ h6,
 p {
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }

@@ -19,7 +19,7 @@ const LightMode = () => {
     const darkModeTheme = {
       text: "white",
       bg: "#0d1117",
-      secundary: "#1c2833",
+      secundary: "#1C1E25",
       green: "greenyellow",
     };
     const nav = document.getElementById("nav");
