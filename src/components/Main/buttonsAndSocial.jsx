@@ -14,10 +14,10 @@ const ButtonsAndSocial = () => {
     <>
       <div className="buttons-about">
         <a href="#works">
-          <div className="button-primary">Trabajos</div>
+          <div className="button-primary">Conoce mi Trabajo</div>
         </a>
         <Link to="/about">
-          <div className="button-secundary">Sobre Mi</div>
+          <div className="button-secundary">Un vistazo a mi perfil</div>
         </Link>
       </div>
       <div className="front-buttons">

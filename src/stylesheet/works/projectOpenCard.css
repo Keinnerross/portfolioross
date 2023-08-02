@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(20, 20, 20, 0.603);
+  z-index: 9999;
 }
 
 .container-project-card {

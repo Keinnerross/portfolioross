@@ -7,7 +7,7 @@
   border-radius: 9px;
 }
 .box-work-main:hover {
-  background-color: var(--secundary);
+  background-color: var(--tertiary);
 }
 .img-project-container {
   min-width: 200px;

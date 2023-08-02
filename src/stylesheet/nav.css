@@ -8,6 +8,7 @@ nav {
   backdrop-filter: blur(9px);
   position: fixed;
   top: 0;
+  z-index: 999;
 }
 
 .nav-mobile {
@@ -15,7 +16,8 @@ nav {
 }
 
 .nav-container {
-  width: 80%;
+  width: 90%;
+  max-width: 1300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,12 +72,12 @@ nav {
 
 .button-cv {
   max-width: 110px;
-  padding: 9px;
-  border-radius: 7px;
+  padding: 12px;
+  border-radius: 25px;
   background-color: var(--purple);
   cursor: pointer;
   user-select: none;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .button-cv span {
@@ -85,7 +87,8 @@ nav {
 
 .button-cv:hover {
   filter: brightness(1.2);
-  transition: 0.8s;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .lateral-menu-container {
@@ -224,7 +227,7 @@ nav {
   }
 }
 
-.serviceContainer{
+.serviceContainer {
   display: flex;
   align-items: center;
   justify-content: center;
