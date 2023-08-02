@@ -1,10 +1,15 @@
 .box-work-main {
-  width: 47%;
+  width: 45%;
   height: 170px;
   cursor: pointer;
-  display: flex;
-  padding: 10px;
   border-radius: 9px;
+  padding: 15px;
+  box-sizing: content-box;
+}
+
+.box-work-section {
+  height: 100%;
+  display: flex;
 }
 .box-work-main:hover {
   background-color: var(--tertiary);
@@ -45,10 +50,12 @@
 /* Escritorio pequeño / tablet */
 @media only screen and (min-width: 575px) and (max-width: 1200px) {
   .box-work-main {
-    display: inline;
-    padding: 0;
+    width: 100%;
   }
-
+  .box-work-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .img-project-container {
     width: 100%;
     height: 300px;
@@ -66,7 +73,12 @@
 /* Teléfonos */
 @media only screen and (max-width: 575px) {
   .box-work-main {
-    display: inline;
+    width: 100%;
+    height: auto;
+  }
+  .box-work-section {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .img-project-container {

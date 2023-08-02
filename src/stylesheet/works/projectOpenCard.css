@@ -15,15 +15,15 @@
 .container-project-card {
   width: 55rem;
   position: absolute;
-  top: 10%;
-  height: 100%;
+  bottom: 0;
+  height: 90%;
   background-color: var(--secundary);
   border-radius: 14px 14px 0 0;
   z-index: 200;
   animation: swipeCard 0.4s ease-out;
   display: flex;
   flex-direction: column;
-  max-height: 90%;
+  max-height: 900px;
 }
 
 .container-project-card::-webkit-scrollbar {
@@ -32,6 +32,7 @@
 
 .container-project-card::-webkit-scrollbar:vertical {
   width: 10px;
+  border-radius: 20px;
 }
 
 .container-project-card::-webkit-scrollbar-button:increment,
@@ -49,13 +50,17 @@
   border-radius: 10px;
 }
 
+.card-section-project {
+  width: 100%;
+  position: relative;
+}
+
 .close-card {
   background-color: var(--secundary);
   width: 20px;
   height: 20px;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
@@ -64,10 +69,6 @@
   right: 25px;
   top: 20px;
   font-size: 1.4em;
-}
-
-.card-section-project {
-  width: 100%;
 }
 
 .image-project {
@@ -212,6 +213,7 @@
 /* Escritorio pequeño / tablet */
 @media only screen and (min-width: 575px) and (max-width: 1200px) {
   .container-project-card {
+    max-height: 600px;
     overflow-y: scroll;
   }
   .card-section-project {
@@ -299,7 +301,8 @@
 /* Teléfonos */
 @media only screen and (max-width: 575px) {
   .container-project-card {
-    overflow-y: none;
+    overflow-y: scroll;
+    max-height: 600px;
   }
   .card-section-project {
     flex-direction: row;

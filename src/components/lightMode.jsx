@@ -48,6 +48,8 @@ const LightMode = () => {
   return (
     <div onClick={() => setLightMode(!lightMode)}>
       {lightMode ? <BsSun /> : <BsMoon />}
+
+     
     </div>
   );
 };

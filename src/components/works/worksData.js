@@ -95,6 +95,51 @@ export const Data = [
     title: "Módulo Super Mario",
     category: "front",
     img: mario,
+
+    description:
+      "Inspirado en el famoso videojuego, diseñé un pequeño módulo interactivo que permite a los usuarios controlar a Super Mario y hacerlo saltar sobre un bloque de texto.",
+
+    descriptionLong: `
+    <div style="text-align: justify;  ">
+    <h4>Características Clave:</h4>
+    <br />
+    <ul>
+      <li>
+        Implementación de JavaScript Vanilla para manejar la lógica de salto y
+        animaciones. Interacción dinámica: Al hacer clic en el botón de salto,
+        Super Mario salta sobre un bloque de texto.
+      </li>
+    <br />
+      <li>
+        Cambio de contenido: El bloque de texto cambia su información al
+        interactuar con Super Mario, lo que muestra la versatilidad del módulo
+        para presentar información temática.
+      </li>
+    <br />
+      <li>
+        Potencial de Integración: Esta dinámica interactiva puede ser
+        fácilmente adaptada y combinada en otros sitios web con temáticas
+        específicas, aportando un toque lúdico y atractivo a la experiencia
+        del usuario.
+      </li>
+      <br />
+      <li>
+      Este proyecto no solo demuestra mis habilidades técnicas en JavaScript,
+      sino también mi capacidad para diseñar soluciones creativas y versátiles
+      que pueden enriquecer la interacción en sitios web.
+      </li>
+    </ul>
+    </div>
+
+`,
+
+    technology: "CSS,",
+    technology2: "Javascript",
+    technology3: "",
+    statepj: "Finalizado",
+    yearpj: "2022",
+    linkRepo: "https://github.com/Keinnerross",
+    linkDemo: "https://github.com/Keinnerross",
   },
   {
     title: "Tecnocrático",

@@ -15,8 +15,18 @@ const ProjectOpenCard = ({
   linkRepoOpen,
   linkDemoOpen,
 }) => {
+  //
+
+  const handlePropagation = (e) => {
+    const classDiv = e.target.className;
+    if (classDiv == "project-open-container") {
+      close();
+    }
+  };
+
   return (
     <div
+      onClick={(e) => handlePropagation(e)}
       className={
         open ? "project-open-container" : "project-open-container hidden"
       }
@@ -28,17 +38,16 @@ const ProjectOpenCard = ({
             : "container-project-card"
         }
       >
-        <div
-          className="close-card"
-          onClick={() => {
-            close();
-          }}
-        >
-          x
-        </div>
-
         {/* Imagen y titulo */}
         <div className="card-section-project">
+          <div
+            className="close-card"
+            onClick={() => {
+              close();
+            }}
+          >
+            <span>x</span>
+          </div>
           <div
             className="image-project"
             style={{

@@ -25,7 +25,6 @@ const ProjectCard = ({
 
   const closeCard = () => {
     setAnimationCloseCard(true);
-
     setTimeout(() => {
       setAnimationCloseCard(false);
       setIsOpenCard(false);
@@ -49,17 +48,19 @@ const ProjectCard = ({
         linkDemoOpen={linkDemo}
       ></ProjectOpenCard>
       <div className="box-work-main" onClick={() => openCard()}>
-        <div
-          className="img-project-container"
-          style={{
-            backgroundImage: `url(${img})`,
-          }}
-        ></div>
-        <div className="info-project-container">
-          <h3>{title}</h3>
-          {description}
-          <div className="tech-project-container">
-            {icon} {technology}
+        <div className="box-work-section">
+          <div
+            className="img-project-container"
+            style={{
+              backgroundImage: `url(${img})`,
+            }}
+          ></div>
+          <div className="info-project-container">
+            <h3>{title}</h3>
+            {description}
+            <div className="tech-project-container">
+              {icon} {technology}
+            </div>
           </div>
         </div>
       </div>
