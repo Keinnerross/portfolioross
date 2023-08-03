@@ -90,7 +90,7 @@ const ProjectOpenCard = ({
             </div>
             <div className="skills-project">
               <span>Tecnologías:</span> {technologyPj} {technology2Pj}
-              {technology3Pj}.
+              {technology3Pj}
             </div>
           </div>
         </div>
