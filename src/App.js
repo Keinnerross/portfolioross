@@ -24,7 +24,6 @@ function App() {
               <Main />
               <SkillsAbout />
               <Works worksRefProp={worksRef} />
-              <CallToAction />
               <Footer />
             </>
           }
