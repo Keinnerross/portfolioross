@@ -1,6 +1,15 @@
 import "../../stylesheet/main/footer.css";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ workRef }) => {
+  const timerScroll = () => {
+    setTimeout(() => {
+      workRef.current.scrollIntoView({
+        scrollBehavior: "smooth",
+      });
+    }, 300);
+  };
+
   return (
     <footer>
       <div className="footerSection">
@@ -21,10 +30,22 @@ const Footer = () => {
           <div className="footerColumn">
             <h5>Plataforma</h5>
             <ul>
-              <li>Trabajos</li>
-              <li>Sobre Mi</li>
-              <li>Recursos</li>
-              <li>Mis Links</li>
+              <Link
+                to="/portfolioross"
+                onClick={() => {
+                  timerScroll();
+                }}
+              >
+                <li>Trabajos</li>
+              </Link>
+
+              <Link to="/about">
+                <li>Sobre Mi</li>
+              </Link>
+
+              <Link to="/about">
+                <li>Recursos</li>
+              </Link>
             </ul>
           </div>
           <div className="footerColumn">
@@ -39,8 +60,13 @@ const Footer = () => {
           <div className="footerColumn">
             <h5>Acerca de</h5>
             <ul>
-              <li>Contacto</li>
-              <li>Inpulsa!</li>
+              <Link to="/contact">
+                <li>Contacto</li>
+              </Link>
+
+              <a href="https://keinnerross.github.io/linkbio/" target="_blank">
+                <li>Mis Links</li>
+              </a>
             </ul>
           </div>
         </div>

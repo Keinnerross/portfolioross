@@ -24,7 +24,6 @@ function App() {
               <Main />
               <SkillsAbout />
               <Works worksRefProp={worksRef} />
-              <Footer />
             </>
           }
         ></Route>
@@ -34,13 +33,12 @@ function App() {
             <>
               <About />
               <CallToAction />
-              <Footer />
             </>
           }
         ></Route>
         <Route path="/trabajos" element={<Works />}></Route>
         <Route
-          path="/contacto"
+          path="/contact"
           element={
             <>
               <Contact />
@@ -48,6 +46,7 @@ function App() {
           }
         ></Route>
       </Routes>
+      <Footer workRef={worksRef} />
     </>
   );
 }

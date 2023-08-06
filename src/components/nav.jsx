@@ -84,7 +84,7 @@ const Nav = ({ workRefRecive }) => {
                 <li>Sobre mi</li>
               </Link>
             </ul>
-            <Link to="/contacto" onClick={() => closeLateral()}>
+            <Link to="/contact" onClick={() => closeLateral()}>
               <div className="button-cv-container">
                 <div className="button-cv lateral-top">
                   <span>Contáctame</span>
@@ -134,7 +134,7 @@ const Nav = ({ workRefRecive }) => {
                 <li>Sobre mi</li>
               </Link>
             </ul>
-            <Link to="/contacto">
+            <Link to="/contact">
               <div className="button-cv-container">
                 <div className="button-cv">
                   <span>Contáctame</span>
