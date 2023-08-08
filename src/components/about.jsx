@@ -50,6 +50,18 @@ const About = () => {
             facilis in dolorum, unde blanditiis autem sapiente repellendus sint
             repudiandae quo cumque laborum. Dolorem, laborum?
           </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium facere dignissimos nemo, provident voluptate earum,
+            facilis in dolorum, unde blanditiis autem sapiente repellendus sint
+            repudiandae quo cumque laborum. Dolorem, laborum?
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium facere dignissimos nemo, provident voluptate earum,
+            facilis in dolorum, unde blanditiis autem sapiente repellendus sint
+            repudiandae quo cumque laborum. Dolorem, laborum?
+          </p>
           <div className="ButtonsContainer">
             <button
               className="buttonPrimary

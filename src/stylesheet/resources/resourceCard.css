@@ -1,17 +1,30 @@
 .resourceCardContainer {
   width: 31%;
 }
+
+.resourceCardContainer a {
+  color: var(--textColor);
+}
+
 .resourceCardSection {
 }
+
 .resourceImg {
-  
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 250px;
   border-radius: 6px;
   cursor: pointer;
+  filter: brightness(0.7);
+  transition: .4s;
 }
+
+.resourceImg:hover {
+  filter: brightness(1);
+}
+
 .resourceDescriptionContainer {
   padding: 10px 0;
 }
