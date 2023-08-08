@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/portfolioross/static/css/main.46ddd138.css",
-    "main.js": "/portfolioross/static/js/main.44cefd3f.js",
+    "main.css": "/portfolioross/static/css/main.c9ac00fd.css",
+    "main.js": "/portfolioross/static/js/main.5e126fba.js",
     "static/media/mario.png": "/portfolioross/static/media/mario.70fec6318eb5bc86e3a5.png",
     "static/media/yami.png": "/portfolioross/static/media/yami.d33c785238ad4b867c03.png",
     "static/media/integrital.png": "/portfolioross/static/media/integrital.dab5051678386185f38c.png",
     "static/media/jaxconstruction.jpg": "/portfolioross/static/media/jaxconstruction.08c64d12234f0f13b105.jpg",
+    "static/media/css.jpg": "/portfolioross/static/media/css.6450bfb529b67ffbecbe.jpg",
     "static/media/spartan-cover.jpg": "/portfolioross/static/media/spartan-cover.8b45f8b052dbed82e9c6.jpg",
     "static/media/techsopher.jpg": "/portfolioross/static/media/techsopher.1e0da2f385a52fc966a4.jpg",
     "static/media/linkbio-cover.jpg": "/portfolioross/static/media/linkbio-cover.11c7c7814d288818d9e4.jpg",
     "static/media/pcs.png": "/portfolioross/static/media/pcs.dda0ff05ed45559dcf14.png",
+    "static/media/learn.jpg": "/portfolioross/static/media/learn.6d756b2c4e39dadf41a7.jpg",
     "static/media/pulperia.jpg": "/portfolioross/static/media/pulperia.ab6155ef64fbcff04653.jpg",
     "static/media/appsologomas.webp": "/portfolioross/static/media/appsologomas.8a1a299626d55a1861a0.webp",
     "static/media/me.png": "/portfolioross/static/media/me.bf7c34312fcb5bdb77f1.png",
+    "static/media/ia.jpg": "/portfolioross/static/media/ia.e0a2b4ab120972f8263a.jpg",
+    "static/media/png.jpg": "/portfolioross/static/media/png.91bf3b053c628ddbe13d.jpg",
     "static/media/appart.webp": "/portfolioross/static/media/appart.adcd92922702379557b0.webp",
     "static/media/skillsDesign.png": "/portfolioross/static/media/skillsDesign.ddd61618bfb9e0cab08f.png",
     "static/media/sologomas.png": "/portfolioross/static/media/sologomas.73937aabe358598aa81c.png",
+    "static/media/game.webp": "/portfolioross/static/media/game.204184d3409fed66ce97.webp",
     "index.html": "/portfolioross/index.html",
-    "main.46ddd138.css.map": "/portfolioross/static/css/main.46ddd138.css.map",
-    "main.44cefd3f.js.map": "/portfolioross/static/js/main.44cefd3f.js.map"
+    "main.c9ac00fd.css.map": "/portfolioross/static/css/main.c9ac00fd.css.map",
+    "main.5e126fba.js.map": "/portfolioross/static/js/main.5e126fba.js.map"
   },
   "entrypoints": [
-    "static/css/main.46ddd138.css",
-    "static/js/main.44cefd3f.js"
+    "static/css/main.c9ac00fd.css",
+    "static/js/main.5e126fba.js"
   ]
 }
