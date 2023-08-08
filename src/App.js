@@ -13,10 +13,16 @@ import { useRef } from "react";
 
 function App() {
   const worksRef = useRef(null);
+  const resourceRef = useRef(null);
+  const aboutRef = useRef(null);
 
   return (
     <>
-      <Nav workRefRecive={worksRef} />
+      <Nav
+        workRefRecive={worksRef}
+        resRefRecive={resourceRef}
+        aboutRefRecive={aboutRef}
+      />
       <Routes>
         <Route
           path="/portfolioross"
@@ -32,8 +38,8 @@ function App() {
           path="/about"
           element={
             <>
-              <About />
-              <Resources />
+              <About aboutRefProp={aboutRef} />
+              <Resources resRefProp={resourceRef} />
             </>
           }
         ></Route>

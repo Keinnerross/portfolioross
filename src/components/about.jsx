@@ -7,13 +7,13 @@ import {
 
 import { VscGithubAlt } from "react-icons/vsc";
 
-const About = () => {
+const About = ({ aboutRefProp }) => {
   const iconConfig = {
     size: 18,
   };
 
   return (
-    <div className="aboutContainer">
+    <div className="aboutContainer" id="about" ref={aboutRefProp}>
       <div className="aboutSection">
         <div className="aboutMePictureContainer">
           <div className="aboutMePicture">{/* " */}</div>

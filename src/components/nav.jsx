@@ -6,7 +6,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 import NavServices from "./navServices";
 
-const Nav = ({ workRefRecive }) => {
+const Nav = ({ workRefRecive, resRefRecive, aboutRefRecive }) => {
   const [lateralMenu, setLateralMenu] = useState(false);
   const [animationClose, setAnimationClose] = useState(false);
   const [isOpenService, setIsOpenService] = useState(false);
@@ -28,6 +28,22 @@ const Nav = ({ workRefRecive }) => {
         scrollBehavior: "smooth",
       });
     }, 300);
+  };
+
+  const timerScrollResources = () => {
+    setTimeout(() => {
+      resRefRecive.current.scrollIntoView({
+        scrollBehavior: "smooth",
+      });
+    }, 400);
+  };
+
+  const timerScrollAbout = () => {
+    setTimeout(() => {
+      aboutRefRecive.current.scrollIntoView({
+        scrollBehavior: "smooth",
+      });
+    }, 400);
   };
 
   const handleOpenService = () => {
@@ -126,11 +142,21 @@ const Nav = ({ workRefRecive }) => {
               <Link to="/portfolioross" onClick={() => timerScroll()}>
                 <li>Trabajos</li>
               </Link>
-              <Link to="/about">
+              <Link
+                to="/about"
+                onClick={() => {
+                  timerScrollResources();
+                }}
+              >
                 <li>Recursos</li>
               </Link>
 
-              <Link to="/about">
+              <Link
+                to="/about"
+                onClick={() => {
+                  timerScrollAbout();
+                }}
+              >
                 <li>Sobre mi</li>
               </Link>
             </ul>

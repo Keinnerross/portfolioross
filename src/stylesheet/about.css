@@ -22,7 +22,7 @@
 .aboutMePicture {
   width: 100%;
   height: 550px;
-  background-image: url("https://img.freepik.com/fotos-premium/foto-equipo-negocios-diverso-discutiendo-trabajo-oficina_252847-32422.jpg");
+  background-image: url("https://img.freepik.com/foto-gratis/joven-hacker-concentrado-trabajo-hombre-auriculares-mirando-pantalla-portatil-leyendo-hackeo-concepto-computadora_74855-24717.jpg?w=360&t=st=1691458060~exp=1691458660~hmac=2884f4a44e73041dc9e730bedf07b73d07217748dcf15c565647049b10dc4b20");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,7 +68,7 @@
 }
 
 .socialButtons a {
-  color: white;
+  color: var(--textColor);
 }
 .aboutInfoContainer p {
   padding: 5px 0 20px 0;
@@ -89,9 +89,9 @@
 }
 
 .buttonSecundary {
-  border: solid 1.6px white;
+  border: solid 1.6px var(--textColor);
   padding: 10px 18px;
-  columns: white;
+  columns: var(--blackbg);
   font-weight: 400;
   border-radius: 25px;
   cursor: pointer;
@@ -102,6 +102,6 @@
 }
 
 .buttonSecundary:hover {
-  background-color: white;
+  background-color: var(--textColor);
   color: var(--blackbg);
 }

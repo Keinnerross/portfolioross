@@ -17,7 +17,7 @@ const Footer = ({ workRef }) => {
           <div className="infoFooterSection">
             <h4>KeinnerRoss</h4>
             <p>
-              Estoy listo para convertir tus ideas en realidad a través de un
+              Estoy listo para convertir tus ideas en realidad a través de
               código.
             </p>
             <div>
