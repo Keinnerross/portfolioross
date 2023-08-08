@@ -131,8 +131,8 @@ export const Data = [
     technology: "Javascript, Css.",
     statepj: "Finalizado",
     yearpj: "2022",
-    linkRepo: "https://github.com/Keinnerross",
-    linkDemo: "https://github.com/Keinnerross",
+    linkRepo: "https://github.com/Keinnerross/Mario-Jump",
+    linkDemo: "https://keinnerross.github.io/Mario-Jump/",
   },
   {
     title: "Tecnocrático",

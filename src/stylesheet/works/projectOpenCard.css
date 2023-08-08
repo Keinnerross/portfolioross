@@ -24,6 +24,7 @@
   display: flex;
   flex-direction: column;
   max-height: 900px;
+  overflow-y: scroll;
 }
 
 .container-project-card::-webkit-scrollbar {
@@ -214,7 +215,6 @@
 @media only screen and (min-width: 575px) and (max-width: 1200px) {
   .container-project-card {
     max-height: 600px;
-    overflow-y: scroll;
   }
   .card-section-project {
     flex-direction: row;

@@ -1,21 +1,74 @@
 import "../stylesheet/about.css";
 import {
-  SiHtml5,
-  SiCss3,
-  SiBootstrap,
-  SiSass,
-  SiWebpack,
-  SiReact,
-  SiNodedotjs,
-} from "react-icons/si";
-import { DiJavascript, DiNpm } from "react-icons/di";
-import { TbBrandNextjs } from "react-icons/tb";
+  SlSocialLinkedin,
+  SlSocialInstagram,
+  SlSocialYoutube,
+} from "react-icons/sl";
+
+import { VscGithubAlt } from "react-icons/vsc";
 
 const About = () => {
+  const iconConfig = {
+    size: 18,
+  };
+
   return (
-    <div className="skills-container">
-      <div className="skills-content-container">
-        <h2>
+    <div className="aboutContainer">
+      <div className="aboutSection">
+        <div className="aboutMePictureContainer">
+          <div className="aboutMePicture">{/* " */}</div>
+        </div>
+
+        <div className="aboutInfoContainer">
+          <h2>Keinner Ross</h2>
+          <h3>Fullstack with JS</h3>
+          <div className="availableContainer">
+            <div className="dotAvailable"></div>
+            <span>Disponible para Trabajo</span>
+          </div>
+          <div className="socialButtons">
+            <a
+              href="https://www.linkedin.com/in/keinner-ross-durantt-28bb231b5/"
+              target="_blank"
+            >
+              <SlSocialLinkedin size={iconConfig.size} />
+            </a>
+            <a href="https://github.com/Keinnerross/" target="_blank">
+              <VscGithubAlt size={iconConfig.size} />
+            </a>
+            <a href="https://www.instagram.com/keinnerross/" target="_blank">
+              <SlSocialInstagram size={iconConfig.size} />
+            </a>
+
+            <a href="https://www.youtube.com/@keinnerross.6223" target="_blank">
+              <SlSocialYoutube size={iconConfig.size} />
+            </a>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium facere dignissimos nemo, provident voluptate earum,
+            facilis in dolorum, unde blanditiis autem sapiente repellendus sint
+            repudiandae quo cumque laborum. Dolorem, laborum?
+          </p>
+          <div className="ButtonsContainer">
+            <button
+              className="buttonPrimary
+"
+            >
+              Envíar Mensaje
+            </button>
+            <button className="buttonSecundary">Trabajos</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
+
+{
+  /* <h2>
           Tus proyectos al siguiente nivel con{" "}
           <span className="purple-1">JavaScript:</span>{" "}
         </h2>
@@ -27,10 +80,11 @@ const About = () => {
           todas las piezas. En resumen, soy un experto en todas las capas de una
           aplicación web y estoy capacitado para trabajar de manera eficiente en
           cada una de ellas.
-        </p>
-      </div>
+        </p> */
+}
 
-      <div className="skills-list">
+{
+  /* <div className="skills-list">
         <h3>Skills Tecnológicos</h3>
         <ul>
           <li>
@@ -74,9 +128,5 @@ const About = () => {
             <li>Divi</li>
           </ul>
         </div>
-      </div>
-    </div>
-  );
-};
-
-export default About;
+      </div> */
+}

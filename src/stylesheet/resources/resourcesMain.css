@@ -1,0 +1,22 @@
+.resourcesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resourcesSection {
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.resourceTitle {
+  width: 90%;
+  max-width: 1300px;
+  padding: 25px 0;
+  font-size: 25px;
+}

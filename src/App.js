@@ -2,6 +2,7 @@ import Nav from "./components/nav";
 import Main from "./components/Main/main";
 import CallToAction from "./components/Main/callToAction";
 import About from "./components/about";
+import Resources from "./components/Resoucers/resourcesMain";
 import SkillsAbout from "./components/skillsAbout";
 import Works from "./components/works/works";
 import Footer from "./components/Main/footer";
@@ -32,7 +33,7 @@ function App() {
           element={
             <>
               <About />
-              <CallToAction />
+              <Resources />
             </>
           }
         ></Route>

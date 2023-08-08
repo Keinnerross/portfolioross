@@ -1,0 +1,17 @@
+.resourceCardContainer {
+  width: 31%;
+}
+.resourceCardSection {
+}
+.resourceImg {
+  
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.resourceDescriptionContainer {
+  padding: 10px 0;
+}
