@@ -37,12 +37,13 @@ const Main = () => {
             <iframe
               width="90%"
               height="315"
-              src="https://www.youtube.com/embed/KvMY1uzSC1E"
+              src="https://www.youtube.com/embed/RoP5H2mx6JA"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+
             <div className="aboutTextImgContainer">
               <img src={aboutText} width="260px" alt="" />
             </div>
