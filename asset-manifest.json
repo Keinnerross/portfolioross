@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioross/static/css/main.c9ac00fd.css",
-    "main.js": "/portfolioross/static/js/main.5e126fba.js",
+    "main.js": "/portfolioross/static/js/main.645f9c92.js",
     "static/media/mario.png": "/portfolioross/static/media/mario.70fec6318eb5bc86e3a5.png",
     "static/media/yami.png": "/portfolioross/static/media/yami.d33c785238ad4b867c03.png",
     "static/media/integrital.png": "/portfolioross/static/media/integrital.dab5051678386185f38c.png",
@@ -23,10 +23,10 @@
     "static/media/game.webp": "/portfolioross/static/media/game.204184d3409fed66ce97.webp",
     "index.html": "/portfolioross/index.html",
     "main.c9ac00fd.css.map": "/portfolioross/static/css/main.c9ac00fd.css.map",
-    "main.5e126fba.js.map": "/portfolioross/static/js/main.5e126fba.js.map"
+    "main.645f9c92.js.map": "/portfolioross/static/js/main.645f9c92.js.map"
   },
   "entrypoints": [
     "static/css/main.c9ac00fd.css",
-    "static/js/main.5e126fba.js"
+    "static/js/main.645f9c92.js"
   ]
 }
