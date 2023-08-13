@@ -59,15 +59,16 @@ const ProjectOpenCard = ({
               <div className="project-title-container">
                 <span>{titleProject}</span>
               </div>
+
               <div className="project-controls-container">
+                <a href={linkRepoOpen} target="_blank">
+                  <span className="repo-button">Repo</span>
+                </a>
                 <a href={linkDemoOpen} target="_blank">
                   <span className="demo-button">
                     <BsPlayFill size={25} />
                     Demo
                   </span>
-                </a>
-                <a href={linkRepoOpen} target="_blank">
-                  <span className="repo-button">Repo</span>
                 </a>
               </div>
             </div>
@@ -89,8 +90,11 @@ const ProjectOpenCard = ({
               <p>{descriptionPj}</p>
             </div>
             <div className="skills-project">
-              <span>Tecnologías:</span> {technologyPj} {technology2Pj}
-              {technology3Pj}
+              <span>Tecnologías:</span>
+              <p>
+                {technologyPj} {technology2Pj}
+                {technology3Pj}
+              </p>
             </div>
           </div>
         </div>
