@@ -40,7 +40,7 @@ const Nav = ({ worksScroll, resourceScroll, aboutScroll, topScroll }) => {
   return (
     <>
       <div className="nav-mobile">
-        <Link to="/portfolioross">
+        <Link to="/portfolioross" onClick={topScroll()}>
           <div className="logo">
             <span className="img-me"></span>
             <span className="logotype">KeinnerRoss</span>
@@ -79,13 +79,33 @@ const Nav = ({ worksScroll, resourceScroll, aboutScroll, topScroll }) => {
               >
                 <li>Trabajos</li>
               </Link>
+              <Link
+                to="/about"
+                onClick={() => {
+                  resourceScroll();
+                  closeLateral();
+                }}
+              >
+                <li>Recursos</li>
+              </Link>
 
-              <li>Cursos</li>
-              <Link to="/about" onClick={() => closeLateral()}>
+              <Link
+                to="/about"
+                onClick={() => {
+                  aboutScroll();
+                  closeLateral();
+                }}
+              >
                 <li>Sobre mi</li>
               </Link>
             </ul>
-            <Link to="/contact" onClick={() => closeLateral()}>
+            <Link
+              to="/contact"
+              onClick={() => {
+                topScroll();
+                closeLateral();
+              }}
+            >
               <div className="button-cv-container">
                 <div className="button-cv lateral-top">
                   <span>Contáctame</span>

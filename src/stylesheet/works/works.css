@@ -61,14 +61,16 @@ option:checked {
 }
 
 /* Teléfonos */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 700px) {
   .box-works-container {
     flex-direction: column;
     justify-content: center;
     margin: 0;
     margin-bottom: 25px;
   }
-
+  .workRefRecive {
+    padding: 0;
+  }
   .works-content-container {
     justify-content: center;
   }
