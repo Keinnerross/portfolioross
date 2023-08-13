@@ -80,3 +80,25 @@ footer {
 .footer-text {
   margin: 25px 0;
 }
+
+@media (max-width: 600px) {
+  .footerSection {
+    flex-direction: column;
+  }
+
+  .infoFooter {
+    width: 100%;
+    text-align: center;
+  }
+
+  .infoFooterSection {
+    width: 100%;
+  }
+  .menufooterSection {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+
+    flex-direction: column;
+  }
+}

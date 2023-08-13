@@ -42,16 +42,19 @@
 .aboutInfoContainer h3 {
   font-weight: 200;
   font-size: 16px;
-  color: lightblue;
+  color: var(--purple);
   text-transform: uppercase;
 }
 
+.aboutInfoContainer p {
+  text-align: justify;
+}
+
 .availableContainer {
-  font-size: 14px;
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .dotAvailable {
@@ -72,6 +75,7 @@
 }
 .aboutInfoContainer p {
   padding: 5px 0 20px 0;
+  font-weight: 200;
 }
 .ButtonsContainer {
   display: flex;
@@ -104,4 +108,28 @@
 .buttonSecundary:hover {
   background-color: var(--textColor);
   color: var(--blackbg);
+}
+
+@media (max-width: 700px) {
+  .aboutSection {
+    flex-direction: column;
+  }
+
+  .aboutMePictureContainer {
+    width: 100%;
+  }
+
+  .aboutInfoContainer {
+    width: 100%;
+  }
+
+  .button-primary {
+    text-align: center;
+  }
+  .button-secundary {
+    text-align: center;
+  }
+  .skillsContainer {
+    padding: 0 !important;
+  }
 }

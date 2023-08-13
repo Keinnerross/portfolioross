@@ -70,6 +70,12 @@ nav {
   /* border-bottom: solid 2px white; */
 }
 
+.serviceDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button-cv {
   max-width: 110px;
   padding: 12px;

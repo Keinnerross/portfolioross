@@ -1,15 +1,7 @@
 import "../../stylesheet/main/footer.css";
 import { Link } from "react-router-dom";
 
-const Footer = ({ workRef }) => {
-  const timerScroll = () => {
-    setTimeout(() => {
-      workRef.current.scrollIntoView({
-        scrollBehavior: "smooth",
-      });
-    }, 300);
-  };
-
+const Footer = ({ worksScroll, aboutScroll, resourceScroll, topScroll }) => {
   return (
     <footer>
       <div className="footerSection">
@@ -33,17 +25,17 @@ const Footer = ({ workRef }) => {
               <Link
                 to="/portfolioross"
                 onClick={() => {
-                  timerScroll();
+                  worksScroll();
                 }}
               >
                 <li>Trabajos</li>
               </Link>
 
-              <Link to="/about">
+              <Link to="/about" onClick={() => aboutScroll()}>
                 <li>Sobre Mi</li>
               </Link>
 
-              <Link to="/about">
+              <Link to="/about" onClick={() => resourceScroll()}>
                 <li>Recursos</li>
               </Link>
             </ul>
@@ -60,7 +52,7 @@ const Footer = ({ workRef }) => {
           <div className="footerColumn">
             <h5>Acerca de</h5>
             <ul>
-              <Link to="/contact">
+              <Link to="/contact" onClick={() => topScroll()}>
                 <li>Contacto</li>
               </Link>
 

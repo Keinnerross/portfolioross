@@ -8,35 +8,34 @@ const NavServices = ({ isOpen, handleOpen }) => {
   return (
     <div
       className={isOpen ? "navServiceContainer" : "hidden"}
-      onMouseLeave={() => handleOpen()}
+      onMouseEnter={() => handleOpen(true)}
+      onMouseLeave={() => handleOpen(false)}
     >
       <div className="navServiceSection">
         <ServiceCard
           Icon={PiPenNibFill}
           title={"Diseño"}
-          description={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-          }
+          description={"Diseño Visual: Marca, Web, Redes Sociales."}
         />
         <ServiceCard
           Icon={PiCodeDuotone}
           title={"Desarrollo"}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            "Construyendo Soluciones a través del Desarrollo Especializado."
           }
         />
         <ServiceCard
           Icon={BiGitBranch}
           title={"Integracioines"}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            "Integraciones personalizadas. Potencia la funcionalidad de tu plataforma."
           }
         />
         <ServiceCard
           Icon={AiFillTool}
           title={"Actualizaciones"}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+            "Actualizaciones y optimización de software para un máximo rendimiento."
           }
         />
       </div>

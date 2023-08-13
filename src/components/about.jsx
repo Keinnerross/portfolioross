@@ -6,8 +6,9 @@ import {
 } from "react-icons/sl";
 
 import { VscGithubAlt } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
-const About = ({ aboutRefProp }) => {
+const About = ({ aboutRefProp, worksScroll, topScroll }) => {
   const iconConfig = {
     size: 18,
   };
@@ -45,31 +46,47 @@ const About = ({ aboutRefProp }) => {
             </a>
           </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Praesentium facere dignissimos nemo, provident voluptate earum,
-            facilis in dolorum, unde blanditiis autem sapiente repellendus sint
-            repudiandae quo cumque laborum. Dolorem, laborum?
+            ¡Saludos! Soy Keinner Ross, un apasionado desarrollador de 25 años
+            con base en Chile desde 2020.
+          </p>
+
+          <p>
+            Mi viaje por la tecnología comenzó en Venezuela, donde estudiaba
+            Ingeniería Informática. Sin embargo, las difíciles circunstancias
+            que atravesaba el país en ese momento me llevaron a tomar la difícil
+            decisión de migrar antes de concluir mi educación. Desde 2019, he
+            estado dedicado a la educación autodidacta en Platzi y otras
+            plataformas en línea, enfocándome en desarrollo web y diseño.
           </p>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Praesentium facere dignissimos nemo, provident voluptate earum,
-            facilis in dolorum, unde blanditiis autem sapiente repellendus sint
-            repudiandae quo cumque laborum. Dolorem, laborum?
+            Mi camino en el mundo laboral dio inicio al mismo tiempo que mi
+            búsqueda de conocimiento. Convertí mi pasión por la tecnología en
+            una carrera como freelancer, Esta experiencia me ha brindado una
+            perspectiva única en la intersección entre la tecnología y el
+            negocio de la industria, además de fortalecer mis habilidades en
+            resolución de problemas.
           </p>
+
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Praesentium facere dignissimos nemo, provident voluptate earum,
-            facilis in dolorum, unde blanditiis autem sapiente repellendus sint
-            repudiandae quo cumque laborum. Dolorem, laborum?
+            Actualmente, estoy emocionado por asumir nuevos retos que me ayuden
+            a crecer como desarrollador. Mi pasión por la tecnología se combina
+            con intereses en música, historia, desarrollo sostenible y
+            geopolítica. Me defino como un Desarrollador Full Stack
+            especializado en Javascript, ansioso por contribuir con soluciones
+            innovadoras y aprender en un entorno de desarrollo continuo.
           </p>
           <div className="ButtonsContainer">
-            <button
-              className="buttonPrimary
+            <Link to="/contact" onClick={() => topScroll()}>
+              <button
+                className="buttonPrimary
 "
-            >
-              Envíar Mensaje
-            </button>
-            <button className="buttonSecundary">Trabajos</button>
+              >
+                Envíar Mensaje
+              </button>
+            </Link>
+            <Link to="/portfolioross" onClick={() => worksScroll()}>
+              <button className="buttonSecundary">Trabajos</button>
+            </Link>
           </div>
         </div>
       </div>

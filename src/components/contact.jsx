@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { BsCheck } from "react-icons/bs";
 
-const Contact = () => {
+const Contact = ({ refContact }) => {
   const form = useRef();
   const [toggleSend, setToggleSend] = useState(false);
 
@@ -41,7 +41,7 @@ const Contact = () => {
           <BsCheck color="green" size="80px" />
         </div>
       </div>
-      <div className="contact-container">
+      <div className="contact-container" ref={refContact}>
         <div className="contact-content-container">
           <div className="contact-form">
             <h2>¡Espero tu mensaje! 😎</h2>

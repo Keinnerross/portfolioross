@@ -15,13 +15,48 @@ function App() {
   const worksRef = useRef(null);
   const resourceRef = useRef(null);
   const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const timerScroll = () => {
+    setTimeout(() => {
+      worksRef.current.scrollIntoView({
+        scrollBehavior: "smooth",
+      });
+    }, 300);
+  };
+
+  const timerScrollAbout = () => {
+    setTimeout(() => {
+      aboutRef.current.scrollIntoView({
+        scrollBehavior: "smooth",
+      });
+    }, 400);
+  };
+
+  const timerScrollResources = () => {
+    setTimeout(() => {
+      resourceRef.current.scrollIntoView({
+        scrollBehavior: "smooth",
+      });
+    }, 400);
+  };
+
+  const timerScrollTop = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 400);
+  };
 
   return (
     <>
       <Nav
-        workRefRecive={worksRef}
-        resRefRecive={resourceRef}
-        aboutRefRecive={aboutRef}
+        worksScroll={timerScroll}
+        resourceScroll={timerScrollResources}
+        aboutScroll={timerScrollAbout}
+        topScroll={timerScrollTop}
       />
       <Routes>
         <Route
@@ -38,7 +73,7 @@ function App() {
           path="/about"
           element={
             <>
-              <About aboutRefProp={aboutRef} />
+              <About aboutRefProp={aboutRef} worksScroll={timerScroll} />
               <Resources resRefProp={resourceRef} />
             </>
           }
@@ -48,12 +83,17 @@ function App() {
           path="/contact"
           element={
             <>
-              <Contact />
+              <Contact refContact={contactRef} />
             </>
           }
         ></Route>
       </Routes>
-      <Footer workRef={worksRef} />
+      <Footer
+        worksScroll={timerScroll}
+        resourceScroll={timerScrollResources}
+        aboutScroll={timerScrollAbout}
+        topScroll={timerScrollTop}
+      />
     </>
   );
 }

@@ -6,10 +6,11 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 import NavServices from "./navServices";
 
-const Nav = ({ workRefRecive, resRefRecive, aboutRefRecive }) => {
+const Nav = ({ worksScroll, resourceScroll, aboutScroll, topScroll }) => {
   const [lateralMenu, setLateralMenu] = useState(false);
   const [animationClose, setAnimationClose] = useState(false);
   const [isOpenService, setIsOpenService] = useState(false);
+
   const toggleLateral = () => {
     setLateralMenu(!lateralMenu);
   };
@@ -22,34 +23,18 @@ const Nav = ({ workRefRecive, resRefRecive, aboutRefRecive }) => {
     }, 440);
   };
 
-  const timerScroll = () => {
-    setTimeout(() => {
-      workRefRecive.current.scrollIntoView({
-        scrollBehavior: "smooth",
-      });
-    }, 300);
-  };
-
-  const timerScrollResources = () => {
-    setTimeout(() => {
-      resRefRecive.current.scrollIntoView({
-        scrollBehavior: "smooth",
-      });
-    }, 400);
-  };
-
-  const timerScrollAbout = () => {
-    setTimeout(() => {
-      aboutRefRecive.current.scrollIntoView({
-        scrollBehavior: "smooth",
-      });
-    }, 400);
-  };
-
-  const handleOpenService = () => {
-    setTimeout(() => {
+  const handleOpenService = (value) => {
+    let closeTimer = setTimeout(() => {
       setIsOpenService(false);
+      console.log("mejecute");
     }, 400);
+
+    if (value === true) {
+      clearTimeout(closeTimer);
+      setIsOpenService(true);
+    }
+
+    console.log(value);
   };
 
   return (
@@ -88,7 +73,7 @@ const Nav = ({ workRefRecive, resRefRecive, aboutRefRecive }) => {
               <Link
                 to="/portfolioross"
                 onClick={() => {
-                  timerScroll();
+                  worksScroll();
                   closeLateral();
                 }}
               >
@@ -112,7 +97,7 @@ const Nav = ({ workRefRecive, resRefRecive, aboutRefRecive }) => {
       </div>
       <nav id="nav">
         <div className="nav-container">
-          <Link to="/portfolioross">
+          <Link to="/portfolioross" onClick={() => topScroll()}>
             <div className="logo">
               <span className="img-me"></span>
               <span className="logotype">KeinnerRoss</span>
@@ -127,9 +112,12 @@ const Nav = ({ workRefRecive, resRefRecive, aboutRefRecive }) => {
               <Link to="#">
                 <li
                   className="serviceContainer"
-                  onMouseEnter={() => setIsOpenService(true)}
+                  onMouseEnter={() => handleOpenService(true)}
                 >
-                  <div>
+                  <div
+                    className="serviceDiv"
+                    onClick={() => setIsOpenService(false)}
+                  >
                     Servicios <MdOutlineKeyboardArrowDown />
                   </div>
                   <NavServices
@@ -139,13 +127,13 @@ const Nav = ({ workRefRecive, resRefRecive, aboutRefRecive }) => {
                 </li>
               </Link>
 
-              <Link to="/portfolioross" onClick={() => timerScroll()}>
+              <Link to="/portfolioross" onClick={() => worksScroll()}>
                 <li>Trabajos</li>
               </Link>
               <Link
                 to="/about"
                 onClick={() => {
-                  timerScrollResources();
+                  resourceScroll();
                 }}
               >
                 <li>Recursos</li>
@@ -154,13 +142,13 @@ const Nav = ({ workRefRecive, resRefRecive, aboutRefRecive }) => {
               <Link
                 to="/about"
                 onClick={() => {
-                  timerScrollAbout();
+                  aboutScroll();
                 }}
               >
                 <li>Sobre mi</li>
               </Link>
             </ul>
-            <Link to="/contact">
+            <Link to="/contact" onClick={() => topScroll()}>
               <div className="button-cv-container">
                 <div className="button-cv">
                   <span>Contáctame</span>
