@@ -26,7 +26,14 @@
 
 .serviceCard:hover {
   background-color: white;
+}
+
+.serviceCard:hover .serviceSection {
   color: var(--secundary);
+}
+
+.serviceSectionLight:hover {
+  color: black;
 }
 
 .serviceCard:hover h4 {

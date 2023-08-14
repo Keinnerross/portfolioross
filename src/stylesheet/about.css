@@ -22,8 +22,8 @@
 .aboutMePicture {
   width: 100%;
   height: 550px;
-  background-image: url("https://img.freepik.com/foto-gratis/joven-hacker-concentrado-trabajo-hombre-auriculares-mirando-pantalla-portatil-leyendo-hackeo-concepto-computadora_74855-24717.jpg?w=360&t=st=1691458060~exp=1691458660~hmac=2884f4a44e73041dc9e730bedf07b73d07217748dcf15c565647049b10dc4b20");
-  background-position: center;
+
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 9px;
@@ -110,7 +110,7 @@
   color: var(--blackbg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
   .aboutContainer {
     padding: 0;
   }
@@ -122,6 +122,9 @@
     width: 100%;
   }
 
+  .aboutMePicture {
+    background-position: center;
+  }
   .aboutInfoContainer {
     width: 100%;
   }

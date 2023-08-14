@@ -6,7 +6,14 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 import NavServices from "./navServices";
 
-const Nav = ({ worksScroll, resourceScroll, aboutScroll, topScroll }) => {
+const Nav = ({
+  worksScroll,
+  resourceScroll,
+  aboutScroll,
+  topScroll,
+  handleLightMode,
+  lightMode,
+}) => {
   const [lateralMenu, setLateralMenu] = useState(false);
   const [animationClose, setAnimationClose] = useState(false);
   const [isOpenService, setIsOpenService] = useState(false);
@@ -26,15 +33,30 @@ const Nav = ({ worksScroll, resourceScroll, aboutScroll, topScroll }) => {
   const handleOpenService = (value) => {
     let closeTimer = setTimeout(() => {
       setIsOpenService(false);
-      console.log("mejecute");
     }, 400);
 
     if (value === true) {
       clearTimeout(closeTimer);
       setIsOpenService(true);
     }
+  };
 
-    console.log(value);
+  /*Data LightMod */
+
+  const lightModeTheme = {
+    text: "#0d1117",
+    bg: "rgb(240, 231, 219)",
+    secundary: "#F5F0E8",
+    // bg: "#f1faee",
+    // secundary: "#dce2d9",
+    green: "green",
+  };
+
+  const darkModeTheme = {
+    text: "white",
+    bg: "#0d1117",
+    secundary: "#1C1E25",
+    green: "greenyellow",
   };
 
   return (
@@ -68,7 +90,12 @@ const Nav = ({ worksScroll, resourceScroll, aboutScroll, topScroll }) => {
           <div className="content-lateral-nav">
             <ul>
               <li>
-                <LightMode />
+                <LightMode
+                  lightValue={lightModeTheme}
+                  darkValue={darkModeTheme}
+                  handleLightMode={handleLightMode}
+                  lightMode={lightMode}
+                />
               </li>
               <Link
                 to="/portfolioross"
@@ -127,7 +154,12 @@ const Nav = ({ worksScroll, resourceScroll, aboutScroll, topScroll }) => {
           <div className="routes-section">
             <ul className="ul-nav">
               <li>
-                <LightMode />
+                <LightMode
+                  lightValue={lightModeTheme}
+                  darkValue={darkModeTheme}
+                  handleLightMode={handleLightMode}
+                  lightMode={lightMode}
+                />
               </li>
               <Link to="#">
                 <li
@@ -143,6 +175,7 @@ const Nav = ({ worksScroll, resourceScroll, aboutScroll, topScroll }) => {
                   <NavServices
                     isOpen={isOpenService}
                     handleOpen={handleOpenService}
+                    isLightMode={lightMode}
                   />
                 </li>
               </Link>

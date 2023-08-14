@@ -5,8 +5,9 @@ import { PiPenNibFill, PiCodeDuotone } from "react-icons/pi";
 import { BiGitBranch } from "react-icons/bi";
 import { AiFillTool } from "react-icons/ai";
 import aboutText from "../../images/main/abouText.png";
+import aboutTextLightMode from "../../images/main/abouText_LightMode.png";
 
-const Main = () => {
+const Main = ({ isLightMode }) => {
   const settingIcon = {
     size: 22,
   };
@@ -37,15 +38,18 @@ const Main = () => {
             <iframe
               width="90%"
               height="315"
-              src="https://www.youtube.com/embed/4TSxQWrwY8c"
+              src="https://www.youtube.com/embed/dAvDgeEDGaY"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-
             <div className="aboutTextImgContainer">
-              <img src={aboutText} width="260px" alt="" />
+              <img
+                src={isLightMode ? aboutTextLightMode : aboutText}  
+                width="260px"
+                alt=""
+              />
             </div>
           </div>
 

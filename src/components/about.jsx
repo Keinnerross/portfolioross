@@ -7,7 +7,7 @@ import {
 
 import { VscGithubAlt } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-
+import mePicture from "../images/meAboutPicture.jpg";
 const About = ({ aboutRefProp, worksScroll, topScroll }) => {
   const iconConfig = {
     size: 18,
@@ -17,7 +17,12 @@ const About = ({ aboutRefProp, worksScroll, topScroll }) => {
     <div className="aboutContainer" id="about" ref={aboutRefProp}>
       <div className="aboutSection">
         <div className="aboutMePictureContainer">
-          <div className="aboutMePicture">{/* " */}</div>
+          <div
+            className="aboutMePicture"
+            style={{ backgroundImage: `url(${mePicture})` }}
+          >
+            {/* " */}
+          </div>
         </div>
 
         <div className="aboutInfoContainer">

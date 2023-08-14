@@ -15,12 +15,11 @@
 }
 
 .button-secundary {
-  border: solid 1.6px white;
+  border: solid 1.6px var(--textColor);
   padding: 10px 18px;
   columns: white;
   font-weight: 400;
   border-radius: 25px;
-
   cursor: pointer;
   color: var(--textColor);
 }
@@ -28,7 +27,7 @@
 .button-secundary:hover {
   background-color: white;
   transition: 0.4s;
-  color: var(--blackbg);
+  color: black;
 }
 
 .front-buttons {

@@ -8,10 +8,17 @@ import Works from "./components/works/works";
 import Footer from "./components/Main/footer";
 import Contact from "./components/contact";
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 import "./App.css";
 import { useRef } from "react";
 
 function App() {
+  const [lightMode, setLightMode] = useState(false);
+
+  const handleLightMode = () => {
+    setLightMode(!lightMode);
+  };
+
   const worksRef = useRef(null);
   const resourceRef = useRef(null);
   const aboutRef = useRef(null);
@@ -57,13 +64,15 @@ function App() {
         resourceScroll={timerScrollResources}
         aboutScroll={timerScrollAbout}
         topScroll={timerScrollTop}
+        handleLightMode={handleLightMode}
+        lightMode={lightMode}
       />
       <Routes>
         <Route
           path="/portfolioross"
           element={
             <>
-              <Main />
+              <Main isLightMode={lightMode} />
               <SkillsAbout />
               <Works worksRefProp={worksRef} />
             </>

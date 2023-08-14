@@ -2,14 +2,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 45px 0;
+  flex-direction: column;
+  padding: 45px 0 15px 0;
 }
 
 .footerSection {
   width: 90%;
   max-width: 1300px;
   display: flex;
-  padding: 50px 0;
+  padding-top: 50px;
   border-top: 1px solid gray;
 }
 
@@ -73,14 +74,12 @@ footer {
 
 .footerColumn ul > li:hover {
   cursor: pointer;
-  color: white;
 }
 
 .footer-text {
-  margin: 25px 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   footer {
     padding-bottom: 0;
   }

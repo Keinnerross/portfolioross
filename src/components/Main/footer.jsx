@@ -13,8 +13,14 @@ const Footer = ({ worksScroll, aboutScroll, resourceScroll, topScroll }) => {
               código.
             </p>
             <div>
-              <h5>Escribeme un whatsapp</h5>
-              <h4>+569 9130 2647</h4>
+              <a
+                href="https://wa.me/56922465427"
+                target="_blank"
+                style={{ color: "white" }}
+              >
+                <h5>Escribeme un whatsapp</h5>
+                <h4>+569 9130 2647</h4>
+              </a>
             </div>
           </div>
         </div>
@@ -63,10 +69,11 @@ const Footer = ({ worksScroll, aboutScroll, resourceScroll, topScroll }) => {
           </div>
         </div>
       </div>
-      {/* <span className="footer-text">
+      <span className="footer-text">
         Hecho con ♥ por <span>Keinner Ross</span> ©2023
-      </span> */}
+      </span>
     </footer>
+    //
   );
 };
 

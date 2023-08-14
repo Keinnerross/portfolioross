@@ -37,11 +37,10 @@
   gap: 5px;
   cursor: pointer;
   transition: 0.3s;
-  color: rgb(205, 205, 205);
+  color: var(--textColor);
 }
 .serviceTag:hover {
   transform: scale(1.1);
-  color: white;
 }
 .serviceTag h5 {
   font-weight: 500;
@@ -128,10 +127,8 @@
     padding: 20px 0;
   }
 
- 
   .serviceTagContainer {
     padding: 20px 0;
-
     max-width: 100%;
     flex-wrap: wrap;
     justify-content: center;

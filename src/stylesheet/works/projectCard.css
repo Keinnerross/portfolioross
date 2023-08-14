@@ -12,7 +12,7 @@
   display: flex;
 }
 .box-work-main:hover {
-  background-color: var(--tertiary);
+  background-color: var(--secundary);
 }
 .img-project-container {
   min-width: 200px;
@@ -48,10 +48,11 @@
 }
 
 /* Escritorio pequeño / tablet */
-@media only screen and (min-width: 575px) and (max-width: 1200px) {
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
   .box-work-main {
     width: 100%;
     padding: 0;
+    height: auto;
   }
   .box-work-section {
     display: flex;

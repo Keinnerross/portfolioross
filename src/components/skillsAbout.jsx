@@ -31,7 +31,6 @@ const SkillsAbout = () => {
 
   const handleExitAnimation = () => {
     setExitAnim(true);
-    console.log("estrue");
     setTimeout(() => {
       setExitAnim(false);
     }, 500);
