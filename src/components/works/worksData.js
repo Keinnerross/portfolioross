@@ -156,7 +156,7 @@ export const Data = [
     category: "wp",
     img: pulperia,
     description:
-      "Fusioné la esencia de una pulperíaa con la comodidad de las compras en línea, destacando la autenticidad a través de la identidad visual",
+      "Fusioné la esencia de una pulpería con la comodidad de las compras en línea, destacando la autenticidad a través de la identidad visual",
     descriptionLong: `
     <p> <b>Pulpería 5 Estrellas </b> es un proyecto destacado en mi portafolio donde combiné mis habilidades en WordPress y WooCommerce para crear una experiencia única. 
     Cuenta con integraciones de pago, modulos personalizados con JS y un diseño responsive.

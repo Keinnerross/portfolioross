@@ -65,6 +65,7 @@
   }
 
   .info-project-container {
+    padding-top: 15px;
     margin: 0;
   }
 
@@ -93,6 +94,7 @@
 
   .info-project-container {
     margin: 0;
+    padding-top: 15px;
   }
 
   .box-work-main:hover {
