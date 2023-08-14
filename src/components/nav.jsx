@@ -62,7 +62,7 @@ const Nav = ({
   return (
     <>
       <div className="nav-mobile">
-        <Link to="/portfolioross" onClick={topScroll()}>
+        <Link to="/portfolioross" onClick={() => topScroll()}>
           <div className="logo">
             <span className="img-me"></span>
             <span className="logotype">KeinnerRoss</span>

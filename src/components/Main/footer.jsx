@@ -13,11 +13,7 @@ const Footer = ({ worksScroll, aboutScroll, resourceScroll, topScroll }) => {
               código.
             </p>
             <div>
-              <a
-                href="https://wa.me/56922465427"
-                target="_blank"
-                style={{ color: "white" }}
-              >
+              <a href="https://wa.me/56922465427" target="_blank">
                 <h5>Escribeme un whatsapp</h5>
                 <h4>+569 9130 2647</h4>
               </a>

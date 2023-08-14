@@ -49,6 +49,7 @@ function App() {
   };
 
   const timerScrollTop = () => {
+    console.log("runns");
     setTimeout(() => {
       window.scrollTo({
         top: 0,
