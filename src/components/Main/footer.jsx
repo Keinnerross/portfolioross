@@ -15,7 +15,7 @@ const Footer = ({ worksScroll, aboutScroll, resourceScroll, topScroll }) => {
             <div>
               <a href="https://wa.me/56922465427" target="_blank">
                 <h5>Escribeme un whatsapp</h5>
-                <h4>+569 9130 2647</h4>
+                <h4>+569 2246 5427</h4>
               </a>
             </div>
           </div>

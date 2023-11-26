@@ -176,12 +176,12 @@
 }
 
 .skills-project p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .skills-project span {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .close-anim-card {
@@ -263,7 +263,7 @@
   }
   .description-project {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
   }
   .container-project-card {
     width: 100vw;
@@ -311,7 +311,7 @@
   }
 
   .description-project p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -356,7 +356,7 @@
   }
 
   .description-project p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .container-project-card {
     width: 100vw;
