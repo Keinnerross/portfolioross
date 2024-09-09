@@ -142,75 +142,77 @@ const Nav = ({
           </div>
         </div>
       </div>
-      <nav id="nav">
-        <div className="nav-container">
-          <Link to="/portfolioross" onClick={() => topScroll()}>
-            <div className="logo">
-              <span className="img-me"></span>
-              <span className="logotype">KeinnerRoss</span>
-            </div>
-          </Link>
-
-          <div className="routes-section">
-            <ul className="ul-nav">
-              <li>
-                <LightMode
-                  lightValue={lightModeTheme}
-                  darkValue={darkModeTheme}
-                  handleLightMode={handleLightMode}
-                  lightMode={lightMode}
-                />
-              </li>
-              <Link to="#">
-                <li
-                  className="serviceContainer"
-                  onMouseEnter={() => handleOpenService(true)}
-                >
-                  <div
-                    className="serviceDiv"
-                    onClick={() => setIsOpenService(false)}
-                  >
-                    Servicios <MdOutlineKeyboardArrowDown />
-                  </div>
-                  <NavServices
-                    isOpen={isOpenService}
-                    handleOpen={handleOpenService}
-                    isLightMode={lightMode}
-                  />
-                </li>
-              </Link>
-
-              <Link to="/portfolioross" onClick={() => worksScroll()}>
-                <li>Trabajos</li>
-              </Link>
-              <Link
-                to="/about"
-                onClick={() => {
-                  resourceScroll();
-                }}
-              >
-                <li>Recursos</li>
-              </Link>
-
-              <Link
-                to="/about"
-                onClick={() => {
-                  aboutScroll();
-                }}
-              >
-                <li>Sobre mi</li>
-              </Link>
-            </ul>
-            <Link to="/contact" onClick={() => topScroll()}>
-              <div className="button-cv-container">
-                <div className="button-cv">
-                  <span>Contáctame</span>
-                </div>
+      <div className="w-screen relative flex">
+        <nav id="nav" className="fixed top-0 w-[75vw]">
+          <div className="flex justify-between items-center py-[10px] w-[100%]">
+            <Link to="/portfolioross" onClick={() => topScroll()}>
+              <div className="logo">
+                <span className="img-me"></span>
+                <span className="logotype">KeinnerRoss</span>
               </div>
             </Link>
+
+            <div className="routes-section">
+              <ul className="ul-nav">
+                <li>
+                  <LightMode
+                    lightValue={lightModeTheme}
+                    darkValue={darkModeTheme}
+                    handleLightMode={handleLightMode}
+                    lightMode={lightMode}
+                  />
+                </li>
+                <Link to="#">
+                  <li
+                    className="serviceContainer"
+                    onMouseEnter={() => handleOpenService(true)}
+                  >
+                    <div
+                      className="serviceDiv"
+                      onClick={() => setIsOpenService(false)}
+                    >
+                      Servicios <MdOutlineKeyboardArrowDown />
+                    </div>
+                    <NavServices
+                      isOpen={isOpenService}
+                      handleOpen={handleOpenService}
+                      isLightMode={lightMode}
+                    />
+                  </li>
+                </Link>
+
+                <Link to="/portfolioross" onClick={() => worksScroll()}>
+                  <li>Trabajos</li>
+                </Link>
+                <Link
+                  to="/about"
+                  onClick={() => {
+                    resourceScroll();
+                  }}
+                >
+                  <li>Recursos</li>
+                </Link>
+
+                <Link
+                  to="/about"
+                  onClick={() => {
+                    aboutScroll();
+                  }}
+                >
+                  <li>Sobre mi</li>
+                </Link>
+              </ul>
+              <Link to="/contact" onClick={() => topScroll()}>
+                <div className="button-cv-container">
+                  <div className="button-cv">
+                    <span>Contáctame</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </>
   );
 };

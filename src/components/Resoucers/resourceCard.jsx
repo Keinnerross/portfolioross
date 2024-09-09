@@ -10,11 +10,10 @@ const ResourceCard = ({ titleRes, descriptionRes, imgRes, urlRes }) => {
             style={{ backgroundImage: `url(${imgRes})` }}
           ></div>
           <div className="resourceDescriptionContainer">
-            <h2>{titleRes || "Titulo"}</h2>
-            <p>
-              {descriptionRes ||
+            <h2 className="text-[22px] font-bold">{titleRes || "Titulo"}</h2>
+            <span className="text-[16px]">{descriptionRes ||
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit"}
-            </p>
+            </span>
           </div>
         </div>
       </a>

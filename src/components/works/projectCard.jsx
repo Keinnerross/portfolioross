@@ -46,7 +46,8 @@ const ProjectCard = ({
         year={yearpj}
         linkRepoOpen={linkRepo}
         linkDemoOpen={linkDemo}
-      ></ProjectOpenCard>
+      />
+
       <div className="box-work-main" onClick={() => openCard()}>
         <div className="box-work-section">
           <div
@@ -56,8 +57,8 @@ const ProjectCard = ({
             }}
           ></div>
           <div className="info-project-container">
-            <h3>{title}</h3>
-            {description}
+            <h3 className="font-bold">{title}</h3>
+            <span className="text-[16px]">{description}</span>
             <div className="tech-project-container">
               {icon} {technology}
             </div>

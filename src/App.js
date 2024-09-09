@@ -59,52 +59,54 @@ function App() {
   };
 
   return (
-    <>
-      <Nav
-        worksScroll={timerScroll}
-        resourceScroll={timerScrollResources}
-        aboutScroll={timerScrollAbout}
-        topScroll={timerScrollTop}
-        handleLightMode={handleLightMode}
-        lightMode={lightMode}
-      />
-      <Routes>
-        <Route
-          path="/portfolioross"
-          element={
-            <>
-              <Main isLightMode={lightMode} />
-              <SkillsAbout />
-              <Works worksRefProp={worksRef} />
-            </>
-          }
-        ></Route>
-        <Route
-          path="/about"
-          element={
-            <>
-              <About aboutRefProp={aboutRef} worksScroll={timerScroll} />
-              <Resources resRefProp={resourceRef} />
-            </>
-          }
-        ></Route>
-        <Route path="/trabajos" element={<Works />}></Route>
-        <Route
-          path="/contact"
-          element={
-            <>
-              <Contact refContact={contactRef} />
-            </>
-          }
-        ></Route>
-      </Routes>
-      <Footer
-        worksScroll={timerScroll}
-        resourceScroll={timerScrollResources}
-        aboutScroll={timerScrollAbout}
-        topScroll={timerScrollTop}
-      />
-    </>
+    <div className="w-screen flex flex-col items-center">
+      <div className="w-[95vw] md:max-w-[80vw]">
+        <Nav
+          worksScroll={timerScroll}
+          resourceScroll={timerScrollResources}
+          aboutScroll={timerScrollAbout}
+          topScroll={timerScrollTop}
+          handleLightMode={handleLightMode}
+          lightMode={lightMode}
+        />
+        <Routes>
+          <Route
+            path="/portfolioross"
+            element={
+              <>
+                <Main isLightMode={lightMode} />
+                <SkillsAbout />
+                <Works worksRefProp={worksRef} />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/about"
+            element={
+              <>
+                <About aboutRefProp={aboutRef} worksScroll={timerScroll} />
+                <Resources resRefProp={resourceRef} />
+              </>
+            }
+          ></Route>
+          <Route path="/trabajos" element={<Works />}></Route>
+          <Route
+            path="/contact"
+            element={
+              <>
+                <Contact refContact={contactRef} />
+              </>
+            }
+          ></Route>
+        </Routes>
+        <Footer
+          worksScroll={timerScroll}
+          resourceScroll={timerScrollResources}
+          aboutScroll={timerScrollAbout}
+          topScroll={timerScrollTop}
+        />
+      </div>
+    </div>
   );
 }
 

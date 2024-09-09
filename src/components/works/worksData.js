@@ -1,12 +1,12 @@
 import spartan from "../../images/worksImg/spartan-cover.jpg";
-import linkbio from "../../images/worksImg/linkbio-cover.jpg";
-import appsologomas from "../../images/worksImg/appsologomas.webp";
+// import linkbio from "../../images/worksImg/linkbio-cover.jpg";
+// import appsologomas from "../../images/worksImg/appsologomas.webp";
 import teknify from "../../images/worksImg/teknify.png";
 import cobra from "../../images/worksImg/cobra.png";
 import redlion from "../../images/worksImg/redlion.png";
 import apirest from "../../images/worksImg/apirest.png";
 import mario from "../../images/worksImg/mario.png";
-import techsopher from "../../images/worksImg/techsopher.jpg";
+// import techsopher from "../../images/worksImg/techsopher.jpg";
 
 export const Data = [
   {
@@ -66,7 +66,7 @@ export const Data = [
     technology: "Node, Express, MySQL, Next.js",
     statepj: "Finalizado",
     yearpj: "2022",
-    linkRepo: "https://github.com/Keinnerross/SologomasApp/",
+    linkRepo: "https://github.com/Keinnerross/api_sologomas",
     linkDemo: "https://keinnerross.github.io/sologomas-web/",
     category: "web",
   },
@@ -77,7 +77,7 @@ export const Data = [
     category: "web",
     img: redlion,
     description:
-      "Desarrollé un chatbot para un redlion estudio de tatuajes, utilizando Node.js y Baileys, que permite agendar citas y solicitar cotizaciones a través de WhatsApp.",
+      "Desarrollé un chatbot para Redlion con Node.js y Baileys, que gestiona citas y cotizaciones a través de WhatsApp.",
     descriptionLong: `
     Desarrollé un chatbot avanzado para este estudio de tatuajes, diseñado para optimizar la programación de citas y la solicitud de cotizaciones. Utilizando Node.js y la librería Baileys para la integración con WhatsApp, el chatbot permite a los usuarios gestionar sus citas y obtener cotizaciones a través de una serie de preguntas directas. Este sistema automatizado no solo facilita la reserva de fechas y la solicitud de precios, sino que también mejora la eficiencia operativa del estudio al reducir la carga de trabajo del personal y ofrecer una experiencia de usuario fluida y continua.
 `,
@@ -91,7 +91,7 @@ export const Data = [
   {
     title: "Website IARCA Shelby",
     description:
-      "La web de IARCA, construida con Next.js y Tailwind CSS, ofrece un rendimiento excelente y un diseño atractivo y responsivo.",
+      "La web de IARCA, construida con Next.js y Tailwind CSS con un diseño atractivo y responsivo.",
     descriptionLong:
       "La página web de Industria Automotriz Replica C.A. (IARCA) está construida con Next.js y Tailwind CSS, dos tecnologías modernas que aseguran un rendimiento óptimo y un diseño atractivo. Next.js, un framework de React, proporciona un enfoque robusto para el desarrollo de aplicaciones web, optimizando la experiencia del usuario con renderizado del lado del servidor y generación de sitios estáticos. Tailwind CSS, por su parte, facilita la creación de interfaces de usuario personalizables y responsivas mediante una metodología de diseño basada en utilidades.",
     img: cobra,
@@ -99,7 +99,7 @@ export const Data = [
     technology: "Next.js, Tailwind",
     statepj: "Finalizado",
     yearpj: "2023",
-    category: "web",
+    category: "front",
     linkRepo: "https://github.com/Keinnerross/web_cobra",
     linkDemo: "https://shelbycobraweb-keinnerross-projects.vercel.app/",
 
@@ -107,11 +107,10 @@ export const Data = [
 
   {
     title: "Wordpress Theme para Teknify",
-    category: "cms",
     img: teknify,
     description:
-      "Creé un tema para Teknify con Tailwind CSS y PHP, incluyendo un mapa SVG interactivo y efectos de particles.js.",
-    descriptionLong: `
+      "Creé un tema para Teknify con Tailwind y PHP  y efectos de particles.js.",
+    descriptionLong: `  
     Desarrollé un tema completamente personalizado para Teknify, una empresa que busca destacar en el ámbito digital. El proyecto se basó en la creación de un tema para WordPress utilizando Tailwind CSS y PHP, lo que me permitió lograr un diseño moderno y adaptable.
 
 Entre las características destacadas del tema se incluye un mapa SVG interactivo, que proporciona una experiencia visual envolvente y funcional. Para añadir un toque de dinamismo a la web, integré la librería particles.js, la cual ofrece efectos visuales llamativos y personalizados.
@@ -119,20 +118,20 @@ Entre las características destacadas del tema se incluye un mapa SVG interactiv
 Este proyecto no solo me permitió profundizar en la creación de interfaces visualmente atractivas, sino que también requirió un entendimiento profundo de la jerarquía, funciones y estructura de WordPress, garantizando así un desarrollo sólido y eficiente.
 `,
     yearpj: "2023",
-    technology: "Next.js, Tailwind",
+    technology: "Php, Tailwind, Worpdress",
     statepj: "Finalizado",
-    category: "cms",
+    category: "CMS/Wordpress",
     linkRepo: "https://github.com/Keinnerross/teknifyTheme",
     linkDemo: "https://teknify.cl",
   },
 
   {
     title: "Módulo Super Mario",
-    category: "front",
+    category: "module",
     img: mario,
 
     description:
-      "Diseñé un pequeño módulo interactivo que permite a los usuarios controlar a Super Mario y hacerlo saltar sobre un bloque de texto.",
+      "Diseñé un módulo interactivo que permite a los usuarios controlar a Super Mario y hacerlo saltar sobre un bloque de texto.",
 
     descriptionLong: `
     <div style="text-align: justify;">

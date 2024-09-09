@@ -2,12 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0 20px 0;
 }
 
 .skillsSection {
   width: 90%;
-  max-width: 1300px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -54,7 +52,6 @@
 }
 
 .skillsInfoContainer h4 {
-  font-size: 56px;
   line-height: 1.2;
 }
 
@@ -139,7 +136,6 @@
   }
 
   .skillsInfoContainer h4 {
-    font-size: 45px;
     line-height: 1.2;
   }
 
@@ -180,7 +176,6 @@
   }
 
   .skillsInfoContainer h4 {
-    font-size: 45px;
     line-height: 1.2;
   }
 

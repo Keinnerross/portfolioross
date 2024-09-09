@@ -46,9 +46,9 @@ const About = ({ aboutRefProp, worksScroll, topScroll }) => {
               <SlSocialInstagram size={iconConfig.size} />
             </a>
 
-            <a href="https://www.youtube.com/@keinnerross.6223" target="_blank">
+            {/* <a href="https://www.youtube.com/@keinnerross.6223" target="_blank">
               <SlSocialYoutube size={iconConfig.size} />
-            </a>
+            </a> */}
           </div>
           <p>
             ¡Saludos! Soy Keinner Ross, un apasionado desarrollador de 25 años

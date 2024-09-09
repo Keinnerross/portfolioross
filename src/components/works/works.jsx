@@ -35,7 +35,7 @@ const Works = ({ worksRefProp }) => {
         />
       ));
     } else if (categorySelect == "CMS/Wordpress") {
-      const dataFilter = Data.filter((work) => work.category == "wp");
+      const dataFilter = Data.filter((work) => work.category == "CMS/Wordpress");
       return dataFilter.map((work, i) => (
         <ProjectCard
           key={i}
@@ -97,8 +97,8 @@ const Works = ({ worksRefProp }) => {
           linkDemo={work.linkDemo}
         />
       ));
-    } else if (categorySelect == "Mobil") {
-      const dataFilter = Data.filter((work) => work.category == "mobil");
+    } else if (categorySelect == "Módulos") {
+      const dataFilter = Data.filter((work) => work.category == "module");
       return dataFilter.map((work, i) => (
         <ProjectCard
           key={i}
@@ -130,14 +130,14 @@ const Works = ({ worksRefProp }) => {
           <div className="nav-works">
             <h4>Trabajos</h4>
             <select
-              className="selectWorks"
+              className="selectWorks text-slate-900"
               defaultValue="Node"
               onChange={(e) => handleCategory(e)}
             >
               <option>All</option>
               <option>Web</option>
-              <option>Mobil</option>
               <option>Front</option>
+              <option>Módulos</option>
               <option>CMS/Wordpress</option>
             </select>
           </div>

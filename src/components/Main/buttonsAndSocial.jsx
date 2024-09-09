@@ -12,15 +12,15 @@ import { Link } from "react-router-dom";
 const ButtonsAndSocial = () => {
   return (
     <>
-      <div className="buttons-about">
+      {/* <div className="buttons-about justify-center">
         <a href="#works">
           <div className="button-primary">Conoce mi Trabajo</div>
         </a>
         <Link to="/about">
           <div className="button-secundary">Un vistazo a mi perfil</div>
         </Link>
-      </div>
-      <div className="front-buttons">
+      </div> */}
+      <div className="front-buttons justify-center ">
         <a
           href="https://www.linkedin.com/in/keinner-ross-durantt-28bb231b5/"
           target="_blank"

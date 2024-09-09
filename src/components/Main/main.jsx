@@ -13,15 +13,15 @@ const Main = ({ isLightMode }) => {
   };
 
   return (
-    <div id="about" className="about-container">
-      <div className="about-content-container">
-        <div className="about-info">
-          <section className="info">
-            <h4>
+    <div id="about" className="about-container pt-0 md:pt-[120px]">
+      <div className="about-content-container text-center">
+        <div className="about-info md:pb-[25px] flex flex-col">
+          <section className="info ">
+            <h4 className="text-[40px] md:text-[81px] pt-[35px] p-[0]">
               Explora mi portafolio de{" "}
-              <span className="purple-1 ">desarrollo ! </span>{" "}
+              <span className="purple-1 ">desarrollo! </span>{" "}
             </h4>
-            <p>
+            <p className="py-[20px] md:pt-[45px] md:pb-[30px]">
               Me llamo Keinner Ross y soy{" "}
               <span className="purple-1 weight">
                 {" "}
@@ -32,28 +32,29 @@ const Main = ({ isLightMode }) => {
             </p>
           </section>
           <ButtonsAndSocial />
-        </div>
-        <div className="videoAboutContainer">
-          <div className="videoitem">
-            <iframe
-              width="90%"
-              height="315"
-              src="https://www.youtube.com/embed/dAvDgeEDGaY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <div className="aboutTextImgContainer">
-              <img
-                src={isLightMode ? aboutTextLightMode : aboutText}  
-                width="260px"
-                alt=""
-              />
-            </div>
-          </div>
 
-          <div className="serviceTagContainer">
+        </div>
+
+        <div className="videoitem pt-[40px] pb-[75px] ">
+          <iframe
+            width="100%"
+            height="550px"
+            src="https://www.youtube.com/embed/dAvDgeEDGaY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div className="aboutTextImgContainer top-[-40px] right-[20px] scale-[.8]">
+            <img
+              src={isLightMode ? aboutTextLightMode : aboutText}
+              width="260px"
+              alt="info"
+            />
+          </div>
+        </div>
+
+        {/* <div className="serviceTagContainer">
             <div className="serviceTag">
               <PiPenNibFill size={settingIcon.size} />
               <h5>Diseño</h5>
@@ -70,8 +71,7 @@ const Main = ({ isLightMode }) => {
               <AiFillTool size={settingIcon.size} />
               <h5>Actualizaciones</h5>
             </div>
-          </div>
-        </div>
+          </div> */}
       </div>
     </div>
   );

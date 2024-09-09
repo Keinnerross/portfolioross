@@ -1,9 +1,8 @@
 import "../stylesheet/skillsAbout.css";
 import skillsDesign from "../images/main/skillsDesign.png";
 import { BiGitPullRequest, BiLogoFirebase } from "react-icons/bi";
+import { SiTailwindcss } from "react-icons/si";
 import {
-  SiBootstrap,
-  SiSass,
   SiReact,
   SiExpo,
   SiNodedotjs,
@@ -49,12 +48,12 @@ const SkillsAbout = () => {
             onMouseLeave={() => handleExitAnimation()}
             options={defaultOptions}
           >
-            <img className="skillsDesignImg" src={skillsDesign} alt="" />
+            <img className="skillsDesignImg scale-[1.1]" src={skillsDesign} alt="" />
           </Tilt>
         </div>
         <div className="skillsInfoContainer">
           <h5 className="purple-1">Desarrollo y Tecnologías</h5>
-          <h4>
+          <h4 className="font-bold text-[40px] md:text-[50px]">
             Stack completo <span>de desarrollo</span>
           </h4>
           <p>
@@ -71,17 +70,15 @@ const SkillsAbout = () => {
                 <li>
                   <BiGitPullRequest size={iconConfig.size} />
                 </li>
-                <li>
-                  <SiBootstrap size={iconConfig.size} />
-                </li>
-                <li>
-                  <SiSass size={iconConfig.size} />
-                </li>
+
                 <li>
                   <SiReact size={iconConfig.size} />
                 </li>
                 <li>
                   <TbBrandNextjs size={iconConfig.size} />
+                </li>
+                <li>
+                  <SiTailwindcss size={iconConfig.size} />
                 </li>
                 <li>
                   <SiExpo size={iconConfig.size} />

@@ -10,21 +10,21 @@ export const resourcesData = [
     title: "Librerías AI para Javascript",
     description: "Conoce estas 5 librerías para hacer Machine Learning con JS",
     img: ia,
-    url: "https://www.instagram.com/reel/Cqgz8SajJMu/",
+    url: "https://www.youtube.com/shorts/KhfjvUhI6qg",
   },
-
+  
   {
     title: "5 Cosas que puedes hacer con Javascript",
     description: "Un repaso a lo que puedes construir con JS",
     img: js,
-    url: "https://www.instagram.com/reel/CixIfAnANoU/",
+    url: "https://www.tiktok.com/@keinnerross/video/7145800833437797637?lang=es",
   },
 
   {
     title: "Aprende a programar gratis",
     description: "Te presento 3 lugares donde aprender programación",
     img: learn,
-    url: "https://www.instagram.com/reel/Ci-kpntDA4n/",
+    url: "https://www.tiktok.com/@keinnerross/video/7147700121239637253?lang=es",
   },
 
   {
@@ -32,7 +32,7 @@ export const resourcesData = [
     description:
       "Estas plantillas son ideales para cuando no se cuenta con mucho tiempo",
     img: css,
-    url: "https://www.instagram.com/reel/CpNOVRkDzr0/",
+    url: "https://www.youtube.com/shorts/FLT-yjICqZY",
   },
 
   {
