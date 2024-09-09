@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -21,12 +22,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  /* width: 50%; */
 }
 .serviceTagContainer {
   padding: 20px 0;
   width: 90%;
-  max-width: 600px;
+  /* max-width: 600px; */
   display: flex;
   justify-content: space-between;
 }
@@ -48,7 +49,7 @@
 }
 
 .about-info {
-  width: 50%;
+  /* width: 50%; */
 }
 .about-info h4 {
   font-size: 81px;

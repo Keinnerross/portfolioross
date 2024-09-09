@@ -33,7 +33,7 @@ const Nav = ({
   const handleOpenService = (value) => {
     let closeTimer = setTimeout(() => {
       setIsOpenService(false);
-    }, 400);
+    }, 300);
 
     if (value === true) {
       clearTimeout(closeTimer);
