@@ -12,7 +12,7 @@ const ResourceCard = ({ titleRes, descriptionRes, imgRes, urlRes }) => {
           <div className="resourceDescriptionContainer">
             <h2 className="text-[22px] font-bold">{titleRes || "Titulo"}</h2>
             <span className="text-[16px]">{descriptionRes ||
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit"}
+                "Lorem ipsum dolor sit amet consectetur"}
             </span>
           </div>
         </div>
