@@ -1,33 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolioross/static/css/main.6ad4d051.css",
-    "main.js": "/portfolioross/static/js/main.5737ac13.js",
+    "main.css": "/portfolioross/static/css/main.ecfdfb3e.css",
+    "main.js": "/portfolioross/static/js/main.c06b83e9.js",
     "static/media/mario.png": "/portfolioross/static/media/mario.70fec6318eb5bc86e3a5.png",
-    "static/media/yami.png": "/portfolioross/static/media/yami.d33c785238ad4b867c03.png",
-    "static/media/integrital.png": "/portfolioross/static/media/integrital.dab5051678386185f38c.png",
-    "static/media/jaxconstruction.jpg": "/portfolioross/static/media/jaxconstruction.08c64d12234f0f13b105.jpg",
+    "static/media/spartan-cover.jpg": "/portfolioross/static/media/spartan-cover.9c5605050e2283a768ed.jpg",
+    "static/media/teknify.png": "/portfolioross/static/media/teknify.b2c1c57b95793e823d44.png",
+    "static/media/cobra.png": "/portfolioross/static/media/cobra.f67e16a2a91f7a5232c3.png",
     "static/media/css.jpg": "/portfolioross/static/media/css.6450bfb529b67ffbecbe.jpg",
-    "static/media/spartan-cover.jpg": "/portfolioross/static/media/spartan-cover.8b45f8b052dbed82e9c6.jpg",
-    "static/media/techsopher.jpg": "/portfolioross/static/media/techsopher.1e0da2f385a52fc966a4.jpg",
+    "static/media/apirest.png": "/portfolioross/static/media/apirest.4fb9fa09c2973f2f5a2b.png",
+    "static/media/redlion.png": "/portfolioross/static/media/redlion.6d4cc76727545aac1ed7.png",
     "static/media/meAboutPicture.jpg": "/portfolioross/static/media/meAboutPicture.f26282732110d3bb09eb.jpg",
-    "static/media/linkbio-cover.jpg": "/portfolioross/static/media/linkbio-cover.11c7c7814d288818d9e4.jpg",
     "static/media/pcs.png": "/portfolioross/static/media/pcs.dda0ff05ed45559dcf14.png",
     "static/media/learn.jpg": "/portfolioross/static/media/learn.6d756b2c4e39dadf41a7.jpg",
-    "static/media/pulperia.jpg": "/portfolioross/static/media/pulperia.ab6155ef64fbcff04653.jpg",
-    "static/media/appsologomas.webp": "/portfolioross/static/media/appsologomas.8a1a299626d55a1861a0.webp",
     "static/media/me.png": "/portfolioross/static/media/me.bf7c34312fcb5bdb77f1.png",
+    "static/media/skillsDesign.png": "/portfolioross/static/media/skillsDesign.2272bb40c561c8343aed.png",
     "static/media/ia.jpg": "/portfolioross/static/media/ia.e0a2b4ab120972f8263a.jpg",
     "static/media/png.jpg": "/portfolioross/static/media/png.91bf3b053c628ddbe13d.jpg",
-    "static/media/appart.webp": "/portfolioross/static/media/appart.adcd92922702379557b0.webp",
-    "static/media/skillsDesign.png": "/portfolioross/static/media/skillsDesign.ddd61618bfb9e0cab08f.png",
-    "static/media/sologomas.png": "/portfolioross/static/media/sologomas.73937aabe358598aa81c.png",
     "static/media/game.webp": "/portfolioross/static/media/game.204184d3409fed66ce97.webp",
+    "static/media/abouText.png": "/portfolioross/static/media/abouText.33747252471c30328c31.png",
+    "static/media/abouText_LightMode.png": "/portfolioross/static/media/abouText_LightMode.867c5f4b656fbe7e28dc.png",
     "index.html": "/portfolioross/index.html",
-    "main.6ad4d051.css.map": "/portfolioross/static/css/main.6ad4d051.css.map",
-    "main.5737ac13.js.map": "/portfolioross/static/js/main.5737ac13.js.map"
+    "main.ecfdfb3e.css.map": "/portfolioross/static/css/main.ecfdfb3e.css.map",
+    "main.c06b83e9.js.map": "/portfolioross/static/js/main.c06b83e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ad4d051.css",
-    "static/js/main.5737ac13.js"
+    "static/css/main.ecfdfb3e.css",
+    "static/js/main.c06b83e9.js"
   ]
 }
