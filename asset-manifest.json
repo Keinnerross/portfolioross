@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioross/static/css/main.ecfdfb3e.css",
-    "main.js": "/portfolioross/static/js/main.c06b83e9.js",
+    "main.css": "/portfolioross/static/css/main.de713272.css",
+    "main.js": "/portfolioross/static/js/main.fc97865d.js",
     "static/media/mario.png": "/portfolioross/static/media/mario.70fec6318eb5bc86e3a5.png",
     "static/media/spartan-cover.jpg": "/portfolioross/static/media/spartan-cover.9c5605050e2283a768ed.jpg",
     "static/media/teknify.png": "/portfolioross/static/media/teknify.b2c1c57b95793e823d44.png",
@@ -20,11 +20,11 @@
     "static/media/abouText.png": "/portfolioross/static/media/abouText.33747252471c30328c31.png",
     "static/media/abouText_LightMode.png": "/portfolioross/static/media/abouText_LightMode.867c5f4b656fbe7e28dc.png",
     "index.html": "/portfolioross/index.html",
-    "main.ecfdfb3e.css.map": "/portfolioross/static/css/main.ecfdfb3e.css.map",
-    "main.c06b83e9.js.map": "/portfolioross/static/js/main.c06b83e9.js.map"
+    "main.de713272.css.map": "/portfolioross/static/css/main.de713272.css.map",
+    "main.fc97865d.js.map": "/portfolioross/static/js/main.fc97865d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecfdfb3e.css",
-    "static/js/main.c06b83e9.js"
+    "static/css/main.de713272.css",
+    "static/js/main.fc97865d.js"
   ]
 }
