@@ -1,28 +1,12 @@
-import spartan from "../../images/worksImg/spartan-cover.jpg";
-// import linkbio from "../../images/worksImg/linkbio-cover.jpg";
-// import appsologomas from "../../images/worksImg/appsologomas.webp";
-import teknify from "../../images/worksImg/teknify.png";
-import cobra from "../../images/worksImg/cobra.png";
+import rms from "../../images/worksImg/rms.png";
+import sologomas from "../../images/worksImg/slogomas.png";
+import quenclima from "../../images/worksImg/quenclima.webp";
+import fileread from "../../images/worksImg/fileread.png";
 import redlion from "../../images/worksImg/redlion.png";
-import apirest from "../../images/worksImg/apirest.png";
 import mario from "../../images/worksImg/mario.png";
-// import techsopher from "../../images/worksImg/techsopher.jpg";
 
 export const Data = [
-  {
-    title: "Spartan Pomodoro",
-    description:
-      "App centrada en mejorar la gestión del tiempo focalizado a una actividad usando el metodo pomodoro.",
-    descriptionLong:
-      'La aplicación se centra en ayudar a las personas a mejorar su gestión del tiempo al utilizar el método Pomodoro. El método Pomodoro es una técnica de productividad que se basa en dividir el trabajo en intervalos de tiempo cortos, denominados "Pomodoros", seguidos por breves descansos. La idea es que al dividir el trabajo en intervalos más cortos y concentrarse en una sola tarea durante un período de tiempo limitado.',
-    img: spartan,
-    technology: "Next.js, Tailwind, Firebase.",
-    statepj: "Finalizado",
-    yearpj: "2023",
-    linkRepo: "https://github.com/Keinnerross/spartan-pomodoro",
-    linkDemo: "https://spartanpomodoro.com",
-    category: "web",
-  },
+  
   //   {
   //     title: "Link in Bio",
   //     description:
@@ -38,40 +22,47 @@ export const Data = [
   //     linkRepo: "https://github.com/Keinnerross/linkbio",
   //     linkDemo: "https://keinnerross.github.io/linkbio/",
   //   },
+  {
+    title: "Ecommerce Sologomas SPA",
+    description:
+      "Tienda en línea diseñada para mostrar productos y facilitar la compra a los clientes",
+    descriptionLong:
+      "Un ecommerce es una plataforma digital enfocada en la venta de productos o servicios de una empresa. Estos sitios permiten a los usuarios explorar catálogos, agregar productos al carrito y realizar compras en línea de forma segura. Además, suelen incluir información sobre la marca, políticas de envío y devolución, métodos de pago y soporte al cliente para mejorar la experiencia de compra.",
+    img: sologomas,
+    technology: "Alpine.js, Vite, Tailwind, Woocommerce, Wordpress.",
+    statepj: "Finalizado",
+    yearpj: "2024",
+    linkRepo: "https://github.com/Keinnerross/sologomas-web",
+    linkDemo: "https://sologomas.cl/",
+    category: "web",
+  },
   // {
-  //   title: "Sitio Web Sologomas",
+  //   title: "API Rest + website Sologomas SPA",
   //   description:
-  //     "Sitio web corporativo diseñado para enseñar productos y brindar información a los clientes",
+  //     "construcción de API Rest para un sistema de cotización y visualización de inventario.",
   //   descriptionLong:
-  //     "Un sitio web corporativo es una plataforma en línea que se utiliza para promocionar y vender productos o servicios de una empresa o negocio. Estos sitios suelen incluir información detallada sobre los productos o servicios ofrecidos, así como también información de contacto, direcciones y horarios de atención al cliente. Además, los sitios web corporativos a menudo incluyen secciones para proporcionar información sobre la empresa, como su historia, sus valores y su visión.",
-  //   img: sologomas,
+  //     'SoloGomas es una empresa dedicada a la distribución de correas automotrices. Para mantener un control eficiente de su inventario y garantizar suficientes correas disponibles, he desarrollado un sistema de control de inventario a medida. Este sistema utiliza una "API" y una base de datos para permitir que diferentes sistemas y aplicaciones se puedan comunicar entre sí y compartan información. Por ejemplo, si un cliente realiza un pedido de correas a través de la tienda en línea de SoloGomas, el sistema de control de inventario se actualizará automáticamente para reflejar el cambio en el nivel de stock.',
+  //   img: apirest,
 
-  //   technology: "Next.js",
-  //   technology2: "React.js ",
-  //   technology3: "Webpack",
+  //   technology: "Node, Express, MySQL, Next.js",
   //   statepj: "Finalizado",
-  //   yearpj: "2023",
-  //   linkRepo: "https://github.com/Keinnerross/sologomas-web",
+  //   yearpj: "2022",
+  //   linkRepo: "https://github.com/Keinnerross/api_sologomas",
   //   linkDemo: "https://keinnerross.github.io/sologomas-web/",
   //   category: "web",
   // },
-  {
-    title: "API Rest + website Sologomas SPA",
-    description:
-      "construcción de API Rest para un sistema de cotización y visualización de inventario.",
-    descriptionLong:
-      'SoloGomas es una empresa dedicada a la distribución de correas automotrices. Para mantener un control eficiente de su inventario y garantizar suficientes correas disponibles, he desarrollado un sistema de control de inventario a medida. Este sistema utiliza una "API" y una base de datos para permitir que diferentes sistemas y aplicaciones se puedan comunicar entre sí y compartan información. Por ejemplo, si un cliente realiza un pedido de correas a través de la tienda en línea de SoloGomas, el sistema de control de inventario se actualizará automáticamente para reflejar el cambio en el nivel de stock.',
-    img: apirest,
-
-    technology: "Node, Express, MySQL, Next.js",
+{
+    title: "Rate My Session",
+  description: "Plataforma web para calificar y reseñar terapeutas.",
+   descriptionLong: "Una plataforma digital creada para que los usuarios puedan calificar, reseñar y compartir experiencias con terapeutas. Además de permitir valoraciones detalladas y reacciones a las reseñas, el sistema integra inteligencia artificial mediante Gemini para generar resúmenes automáticos de las opiniones y destacar los puntos más relevantes de cada terapeuta. El objetivo es fomentar la transparencia, construir confianza y ofrecer una comunidad donde las personas puedan descubrir y evaluar profesionales de la salud mental con base en información real y verificable.",
+    img: rms,
+    technology: "Next.js, Tailwind, WordPress Headless.",
     statepj: "Finalizado",
-    yearpj: "2022",
-    linkRepo: "https://github.com/Keinnerross/api_sologomas",
-    linkDemo: "https://keinnerross.github.io/sologomas-web/",
+    yearpj: "2024",
+    linkRepo: "#",
+    linkDemo: "https://ratemysession-front.vercel.app/",
     category: "web",
   },
-
-
   {
     title: "ChatBot RedLion ",
     category: "web",
@@ -84,45 +75,40 @@ export const Data = [
     yearpj: "2023",
     technology: "Node, Baileys, Docker.",
     statepj: "Finalizado",
-    linkDemo: "https://api.whatsapp.com/send/?phone=56931101801&text=%C2%A1Hola%21+Quisiera+hacer+una+consulta+(:&type=phone_number&app_absent=0",
+    linkDemo:
+      "#",
     linkRepo: "https://github.com/Keinnerross/bot_redlion",
   },
 
   {
-    title: "Website IARCA Shelby",
+    title: "FileRead Home Page ",
     description:
-      "La web de IARCA, construida con Next.js y Tailwind CSS con un diseño atractivo y responsivo.",
+      "Sitio web desarrollado en Framer a partir de un diseño en Figma, enfocado en animaciones y precisión visual.",
     descriptionLong:
-      "La página web de Industria Automotriz Replica C.A. (IARCA) está construida con Next.js y Tailwind CSS, dos tecnologías modernas que aseguran un rendimiento óptimo y un diseño atractivo. Next.js, un framework de React, proporciona un enfoque robusto para el desarrollo de aplicaciones web, optimizando la experiencia del usuario con renderizado del lado del servidor y generación de sitios estáticos. Tailwind CSS, por su parte, facilita la creación de interfaces de usuario personalizables y responsivas mediante una metodología de diseño basada en utilidades.",
-    img: cobra,
-
-    technology: "Next.js, Tailwind",
+      "Proyecto desarrollado en Framer basado en un diseño original de Figma, con especial atención en la fluidez de las animaciones, la precisión en la interfaz de usuario y la adaptación total a diferentes dispositivos. El enfoque principal fue lograr una experiencia moderna, interactiva y visualmente consistente con el diseño propuesto.",
+    img: fileread,
+    technology: "Figma, Framer.",
     statepj: "Finalizado",
-    yearpj: "2023",
+    yearpj: "2025",
     category: "front",
-    linkRepo: "https://github.com/Keinnerross/web_cobra",
-    linkDemo: "https://shelbycobraweb-keinnerross-projects.vercel.app/",
-
+    linkRepo: "#",
+    linkDemo: "https://fileread.com/",
   },
 
   {
-    title: "Wordpress Theme para Teknify",
-    img: teknify,
+    title: "QuenClima",
+    img: quenclima,
     description:
-      "Creé un tema para Teknify con Tailwind y PHP  y efectos de particles.js.",
-    descriptionLong: `  
-    Desarrollé un tema completamente personalizado para Teknify, una empresa que busca destacar en el ámbito digital. El proyecto se basó en la creación de un tema para WordPress utilizando Tailwind CSS y PHP, lo que me permitió lograr un diseño moderno y adaptable.
+      "Sitio web profesional para un taller automotriz, diseñado para atraer clientes y mostrar servicios.",
+    descriptionLong:
+      "Un sitio web profesional para un taller automotriz sirve como vitrina digital para mostrar los servicios, trabajos realizados y datos de contacto del negocio. Permite a los clientes agendar citas, conocer promociones, ver reseñas y obtener información clara sobre mantenimiento, reparaciones y otros servicios del taller, generando confianza y presencia online.",
 
-Entre las características destacadas del tema se incluye un mapa SVG interactivo, que proporciona una experiencia visual envolvente y funcional. Para añadir un toque de dinamismo a la web, integré la librería particles.js, la cual ofrece efectos visuales llamativos y personalizados.
-
-Este proyecto no solo me permitió profundizar en la creación de interfaces visualmente atractivas, sino que también requirió un entendimiento profundo de la jerarquía, funciones y estructura de WordPress, garantizando así un desarrollo sólido y eficiente.
-`,
-    yearpj: "2023",
-    technology: "Php, Tailwind, Worpdress",
+    yearpj: "2024",
+    technology: "Php, Tailwind, Wordpress",
     statepj: "Finalizado",
     category: "CMS/Wordpress",
-    linkRepo: "https://github.com/Keinnerross/teknifyTheme",
-    linkDemo: "https://teknify.cl",
+    linkRepo: "#",
+    linkDemo: "https://quenclima.cl/",
   },
 
   {
@@ -172,8 +158,4 @@ Este proyecto no solo me permitió profundizar en la creación de interfaces vis
     linkRepo: "https://github.com/Keinnerross/Mario-Jump",
     linkDemo: "https://keinnerross.github.io/Mario-Jump/",
   },
-
-
-
-
 ];

@@ -8,8 +8,8 @@ const NavServices = ({ isOpen, handleOpen, isLightMode }) => {
   const dataService = [
     {
       icon: PiPenNibFill,
-      title: "Diseño",
-      description: "Diseño Visual: Marca, Web, Redes Sociales.",
+      title: "Diseño Web",
+      description: "Figma, Framer, Webflow. Fundamentado en UX/UI.",
     },
     {
       icon: PiCodeDuotone,

@@ -19,7 +19,7 @@ const ProjectOpenCard = ({
 
   const handlePropagation = (e) => {
     const classDiv = e.target.className;
-    if (classDiv == "project-open-container") {
+    if (classDiv === "project-open-container") {
       close();
     }
   };
@@ -61,10 +61,10 @@ const ProjectOpenCard = ({
               </div>
 
               <div className="project-controls-container">
-                <a href={linkRepoOpen} target="_blank">
+                <a href={linkRepoOpen} target="_blank" without rel="noreferrer">
                   <span className="repo-button">Repo</span>
                 </a>
-                <a href={linkDemoOpen} target="_blank">
+                <a href={linkDemoOpen} target="_blank" without rel="noreferrer">
                   <span className="demo-button">
                     <BsPlayFill size={25} />
                     Demo
@@ -81,7 +81,7 @@ const ProjectOpenCard = ({
             <div className="description-project">
               <span>
                 <span
-                  className={state == "Finalizado" ? "finalizado" : "en-curso"}
+                  className={state === "Finalizado" ? "finalizado" : "en-curso"}
                 >
                   {state + " "}
                 </span>

@@ -5,6 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { useState } from "react";
 import NavServices from "./navServices";
+import GTranslate from "./Main/gtranslate";
 
 const Nav = ({
   worksScroll,
@@ -89,6 +90,8 @@ const Nav = ({
           </div>
           <div className="content-lateral-nav">
             <ul>
+
+
               <li>
                 <LightMode
                   lightValue={lightModeTheme}
@@ -97,6 +100,8 @@ const Nav = ({
                   lightMode={lightMode}
                 />
               </li>
+             
+
               <Link
                 to="/portfolioross"
                 onClick={() => {
@@ -153,7 +158,7 @@ const Nav = ({
             </Link>
 
             <div className="routes-section">
-              <ul className="ul-nav">
+              <ul className="flex gap-4 items-center !text-md pr-6">
                 <li>
                   <LightMode
                     lightValue={lightModeTheme}
@@ -161,6 +166,8 @@ const Nav = ({
                     handleLightMode={handleLightMode}
                     lightMode={lightMode}
                   />
+                   <li>
+              </li>
                 </li>
                 <Link to="#">
                   <li

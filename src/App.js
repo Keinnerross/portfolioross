@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import "./App.css";
 import { useRef } from "react";
+import GTranslate from "./components/Main/gtranslate";
 
 function App() {
   const [lightMode, setLightMode] = useState(false);
@@ -106,6 +107,8 @@ function App() {
           topScroll={timerScrollTop}
         />
       </div>
+      <GTranslate/>
+
     </div>
   );
 }

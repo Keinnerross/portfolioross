@@ -6,6 +6,7 @@ import { BiGitBranch } from "react-icons/bi";
 import { AiFillTool } from "react-icons/ai";
 import aboutText from "../../images/main/abouText.png";
 import aboutTextLightMode from "../../images/main/abouText_LightMode.png";
+import GTranslate from "./gtranslate";
 
 const Main = ({ isLightMode }) => {
   const settingIcon = {
@@ -27,7 +28,7 @@ const Main = ({ isLightMode }) => {
                 {" "}
                 desarrollador Fullstack con Javascript.
               </span>{" "}
-              Trabajo como freelancer desde hace más de 3 años brindando
+              Trabajo como freelancer desde hace más de 4 años brindando
               soluciones a empresas, agencias y emprendedores.
             </p>
           </section>
@@ -54,25 +55,9 @@ const Main = ({ isLightMode }) => {
           </div>
         </div>
 
-        {/* <div className="serviceTagContainer">
-            <div className="serviceTag">
-              <PiPenNibFill size={settingIcon.size} />
-              <h5>Diseño</h5>
-            </div>
-            <div className="serviceTag">
-              <PiCodeDuotone size={settingIcon.size} />
-              <h5>Desarrollo</h5>
-            </div>
-            <div className="serviceTag">
-              <BiGitBranch size={settingIcon.size} />
-              <h5>Integraciones</h5>
-            </div>
-            <div className="serviceTag">
-              <AiFillTool size={settingIcon.size} />
-              <h5>Actualizaciones</h5>
-            </div>
-          </div> */}
+    
       </div>
+
     </div>
   );
 };

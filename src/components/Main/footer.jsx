@@ -66,7 +66,7 @@ const Footer = ({ worksScroll, aboutScroll, resourceScroll, topScroll }) => {
         </div>
       </div>
       <span className="footer-text">
-        Hecho con ♥ por <span>Keinner Ross</span> ©2024
+        Hecho con ♥ por <span>Keinner Ross</span> ©2025
       </span>
     </footer>
     //

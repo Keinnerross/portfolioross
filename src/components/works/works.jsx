@@ -1,7 +1,5 @@
 import ProjectCard from "./projectCard";
 import "../../stylesheet/works/works.css";
-import { SiReact, SiNodedotjs } from "react-icons/si";
-import { TbBrandNextjs } from "react-icons/tb";
 import { Data } from "./worksData.js";
 import { useState } from "react";
 import parse from "html-react-parser";
@@ -14,7 +12,7 @@ const Works = ({ worksRefProp }) => {
   };
 
   const categoryRender = () => {
-    if (categorySelect == "All") {
+    if (categorySelect === "All") {
       return Data.map((work, i) => (
         <ProjectCard
           key={i}
@@ -34,8 +32,8 @@ const Works = ({ worksRefProp }) => {
           linkDemo={work.linkDemo}
         />
       ));
-    } else if (categorySelect == "CMS/Wordpress") {
-      const dataFilter = Data.filter((work) => work.category == "CMS/Wordpress");
+    } else if (categorySelect === "CMS/Wordpress") {
+      const dataFilter = Data.filter((work) => work.category === "CMS/Wordpress");
       return dataFilter.map((work, i) => (
         <ProjectCard
           key={i}
@@ -55,8 +53,8 @@ const Works = ({ worksRefProp }) => {
           linkDemo={work.linkDemo}
         />
       ));
-    } else if (categorySelect == "Web") {
-      const dataFilter = Data.filter((work) => work.category == "web");
+    } else if (categorySelect === "Web") {
+      const dataFilter = Data.filter((work) => work.category === "web");
       return dataFilter.map((work, i) => (
         <ProjectCard
           key={i}
@@ -76,8 +74,8 @@ const Works = ({ worksRefProp }) => {
           linkDemo={work.linkDemo}
         />
       ));
-    } else if (categorySelect == "Front") {
-      const dataFilter = Data.filter((work) => work.category == "front");
+    } else if (categorySelect === "Front") {
+      const dataFilter = Data.filter((work) => work.category === "front");
       return dataFilter.map((work, i) => (
         <ProjectCard
           key={i}
@@ -97,8 +95,8 @@ const Works = ({ worksRefProp }) => {
           linkDemo={work.linkDemo}
         />
       ));
-    } else if (categorySelect == "Módulos") {
-      const dataFilter = Data.filter((work) => work.category == "module");
+    } else if (categorySelect === "Módulos") {
+      const dataFilter = Data.filter((work) => work.category === "module");
       return dataFilter.map((work, i) => (
         <ProjectCard
           key={i}
