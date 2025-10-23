@@ -1,30 +1,30 @@
 {
   "files": {
     "main.css": "/portfolioross/static/css/main.de713272.css",
-    "main.js": "/portfolioross/static/js/main.fc97865d.js",
+    "main.js": "/portfolioross/static/js/main.f3334fe6.js",
     "static/media/mario.png": "/portfolioross/static/media/mario.70fec6318eb5bc86e3a5.png",
-    "static/media/spartan-cover.jpg": "/portfolioross/static/media/spartan-cover.9c5605050e2283a768ed.jpg",
-    "static/media/teknify.png": "/portfolioross/static/media/teknify.b2c1c57b95793e823d44.png",
-    "static/media/cobra.png": "/portfolioross/static/media/cobra.f67e16a2a91f7a5232c3.png",
     "static/media/css.jpg": "/portfolioross/static/media/css.6450bfb529b67ffbecbe.jpg",
-    "static/media/apirest.png": "/portfolioross/static/media/apirest.4fb9fa09c2973f2f5a2b.png",
+    "static/media/slogomas.png": "/portfolioross/static/media/slogomas.834033ba25bcb7c3e373.png",
+    "static/media/fileread.png": "/portfolioross/static/media/fileread.c2d0d8f6c50b0400414e.png",
     "static/media/redlion.png": "/portfolioross/static/media/redlion.6d4cc76727545aac1ed7.png",
     "static/media/meAboutPicture.jpg": "/portfolioross/static/media/meAboutPicture.f26282732110d3bb09eb.jpg",
     "static/media/pcs.png": "/portfolioross/static/media/pcs.dda0ff05ed45559dcf14.png",
+    "static/media/rms.png": "/portfolioross/static/media/rms.243e35de133794f7fcda.png",
     "static/media/learn.jpg": "/portfolioross/static/media/learn.6d756b2c4e39dadf41a7.jpg",
     "static/media/me.png": "/portfolioross/static/media/me.bf7c34312fcb5bdb77f1.png",
     "static/media/skillsDesign.png": "/portfolioross/static/media/skillsDesign.2272bb40c561c8343aed.png",
     "static/media/ia.jpg": "/portfolioross/static/media/ia.e0a2b4ab120972f8263a.jpg",
+    "static/media/quenclima.webp": "/portfolioross/static/media/quenclima.bfe5a6fb13ec94c6dc76.webp",
     "static/media/png.jpg": "/portfolioross/static/media/png.91bf3b053c628ddbe13d.jpg",
     "static/media/game.webp": "/portfolioross/static/media/game.204184d3409fed66ce97.webp",
     "static/media/abouText.png": "/portfolioross/static/media/abouText.33747252471c30328c31.png",
     "static/media/abouText_LightMode.png": "/portfolioross/static/media/abouText_LightMode.867c5f4b656fbe7e28dc.png",
     "index.html": "/portfolioross/index.html",
     "main.de713272.css.map": "/portfolioross/static/css/main.de713272.css.map",
-    "main.fc97865d.js.map": "/portfolioross/static/js/main.fc97865d.js.map"
+    "main.f3334fe6.js.map": "/portfolioross/static/js/main.f3334fe6.js.map"
   },
   "entrypoints": [
     "static/css/main.de713272.css",
-    "static/js/main.fc97865d.js"
+    "static/js/main.f3334fe6.js"
   ]
 }
